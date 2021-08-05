@@ -43,6 +43,7 @@ export function getInitialState(ctx) {
         deck: [],
         players: [],
         carbonDeck: [],
+        currentCarbon:[],
         teamDeck: [],
         companyDeck: [],
         temperatureIncrease: 0,
@@ -50,16 +51,16 @@ export function getInitialState(ctx) {
         minBid: 0,
         goldBank: 10,
         silverBank: 30,
-        coinBank: 55,
+        coinBank: 100,
         carbonBank: 30,
     };
 
     // Add a deck for every player
-    for (let i = 0; i < ctx.numPlayers; i++) {
+    // for (let i = 0; i < ctx.numPlayers; i++) {
         G.companyDeck = G.companyDeck.concat(companyDeck);
         G.carbonDeck = G.carbonDeck.concat(carbonDeck);
         G.teamDeck = G.teamDeck.concat(teamDeck);
-    }
+    // }
 
     console.log(ctx.currentPlayer);
     // Shuffle resulting deck using lodash
@@ -75,15 +76,33 @@ export function getInitialState(ctx) {
             handCarbonDeck: [],
             handTeamDeck: [],
             bank: {
-                gold: 0,
-                silver: 5,
                 coin: 15,
+                coinsCopy:15,
                 carbonCoins: 0,
                 teamMembers: 0
             },
             currentBid: 0,
         };
     }
+    topCard = G.carbonDeck.shift();
+    G.currentCarbon.push(topCard);
+
+    for (let i = 0; i < 4; i++) {
+        for(let k = 0; k < 4; k++){
+            topCard = G.companyDeck.shift();
+            G.players[i].handCompanyDeck.push(topCard);
+        }
+
+
+    }
+
+    for (let i = 0; i < 3; i++) {
+        for(let k = 0;k < 4;k++){
+        topCard = G.teamDeck.shift();
+        G.players[k].handTeamDeck.push(topCard);
+    }
+    }
+
 
 
     // For debugging "game over" state– this sets the deck to only have a single card
@@ -96,7 +115,9 @@ export function getInitialState(ctx) {
 }
 
 let topCard;
+let findIndex;
 
+export const currentId = [];
 
 export const Game = {
 
@@ -114,23 +135,26 @@ export const Game = {
     // },
     phases: {
         draw: {
-            turn: {moveLimit: 3},
+            turn: {moveLimit: 10},
             moves: {
-                InitialDraw: (G, ctx) => {
-                    for (let i = 0; i < 4; i++) {
-                        topCard = G.companyDeck.shift();
-                        G.players[ctx.currentPlayer].handCompanyDeck.push(topCard);
-                    }
-                    for (let i = 0; i < 3; i++) {
-                        topCard = G.teamDeck.shift();
-                        G.players[ctx.currentPlayer].handTeamDeck.push(topCard);
-                    }
-
-                },
-                DiscardCompany: (G, ctx, id,) => {
+                // InitialDraw: (G, ctx) => {
+                //     for (let i = 0; i < 4; i++) {
+                //         topCard = G.companyDeck.shift();
+                //         currentId[i] = topCard.id;
+                //         console.log(currentId);
+                //         G.players[ctx.currentPlayer].handCompanyDeck.push(topCard);
+                //     }
+                //
+                //     for (let i = 0; i < 3; i++) {
+                //         topCard = G.teamDeck.shift();
+                //         G.players[ctx.currentPlayer].handTeamDeck.push(topCard);
+                //     }
+                //
+                // },
+                DiscardCompany: (G, ctx, id) => {
                     topCard = G.players[ctx.currentPlayer].handCompanyDeck.find((item) => item.id === id);
                     G.companyDeck.push(topCard);
-                    const findIndex = G.players[ctx.currentPlayer].handCompanyDeck.findIndex(i => i.id === id);
+                    findIndex = G.players[ctx.currentPlayer].handCompanyDeck.findIndex(i => i.id === id);
                     if (findIndex > -1) {
                         G.players[ctx.currentPlayer].handCompanyDeck.splice(findIndex, 1);
                     }
@@ -141,7 +165,7 @@ export const Game = {
                 DiscardTeam: (G, ctx, id) => {
                     topCard = G.players[ctx.currentPlayer].handTeamDeck.find((item) => item.id === id);
                     G.teamDeck.push(topCard);
-                    const findIndex = G.players[ctx.currentPlayer].handTeamDeck.findIndex(i => i.id === id);
+                    findIndex = G.players[ctx.currentPlayer].handTeamDeck.findIndex(i => i.id === id);
                     if (findIndex > -1) {
                         G.players[ctx.currentPlayer].handTeamDeck.splice(findIndex, 1);
                     }
@@ -151,17 +175,17 @@ export const Game = {
 
             },
             endIf: G => (G.players[3].handTeamDeck.length === 2),//TODO change endif
-            start: true,
+            // start: true,
             next: "pickEvent",
         },
         pickEvent: {
-            // start: true,
+            start: true,
             next:"counterEvent",
             moves: {
                 DrawCarbonEventCard: (G, ctx) => {
                     topCard = G.carbonDeck.shift();
-                    G.players[ctx.currentPlayer].handCarbonDeck.push(topCard);
-                    console.log(G.players[ctx.currentPlayer].handCarbonDeck[0].event1.id[0]);
+                    G.currentCarbon.push(topCard);
+
                 },
                 PickCarbonEvent: (G, ctx, id) => {
                     if (id === 1) {
@@ -185,7 +209,7 @@ export const Game = {
                 counterEventGRO: (G, ctx, id) => {
                     topCard = G.players[ctx.playerID].handTeamDeck.find((item) => item.type === "GRO");
                     G.teamDeck.push(topCard);
-                    const findIndex = G.players[ctx.currentPlayer].handCompanyDeck.findIndex(i => i.type === "GRO");
+                    findIndex = G.players[ctx.currentPlayer].handCompanyDeck.findIndex(i => i.type === "GRO");
                     if (findIndex > -1) {
                         G.players[ctx.currentPlayer].handCompanyDeck.splice(findIndex, 1);
                     }
@@ -213,8 +237,11 @@ export const Game = {
 
 
 
+
+
         // turn: {moveLimit: 2},
 
     }
 };
+
 
