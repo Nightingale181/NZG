@@ -9,16 +9,15 @@ import {companyDeck} from "./constants/companyDeck";
 import CompanyStack from "./components/CompanyStack";
 import NamePlate from "./components/NamePlate";
 import {number} from "prop-types";
-import Card from "./components/card.js";
+
+import {Card} from "./components/Card";
 import CarbonEventCard from "./components/CarbonEventCard";
 import {CarbonEvent2} from "./components/CarbonEventCard2";
 import TeamCard from "./components/TeamCard";
-import {
-    Draggable,
-    Droppable,
-    DragComponent,
-    DragState
-} from "react-dragtastic"
+import CompanyHand from "./components/CompanyHand";
+
+
+
 const useStyles = makeStyles((theme) => ({
     body:{
         backgroundColor:"darkgreen",
@@ -100,15 +99,19 @@ const NZGBoard = ({ctx, G, moves, ...rest }) => {
          // setPlayerId1(ctx.currentPlayer);
          console.log(playerId1);
 
-         if (ctx.currentPlayer.toString() === "0"){
+         if (ctx.currentPlayer.toString() === "0")
+         {
             setPlayerId1(ctx.currentPlayer);
 
-        } if (ctx.currentPlayer.toString() === "1"){
+        } if (ctx.currentPlayer.toString() === "1")
+        {
             setPlayerId2(ctx.currentPlayer);
 
-        } if ( ctx.currentPlayer.toString() === "2"){
+        } if ( ctx.currentPlayer.toString() === "2")
+        {
             setPlayerId3(ctx.currentPlayer);
-        }if ( ctx.currentPlayer.toString() === "3"){
+        }if ( ctx.currentPlayer.toString() === "3")
+        {
             setPlayerId4(ctx.currentPlayer);
         // moves,setHidden1,hidden1,hidden2,hidden3,hidden4,cardId1,cardId2,cardId3,cardId4,playerId1,playerId2,playerId3,playerId4,ctx,G,actualCard1,actualCard2,actualCard3,actualCard4
         }
@@ -118,14 +121,9 @@ const NZGBoard = ({ctx, G, moves, ...rest }) => {
 
 
 
-    return <div className={classes.background}>
-
-        {/*<Button  onClick={onDraw}>Draw Cards</Button>*/}
-
-
-
-
-                <Box     width={"100%"} >
+    return(
+        <div className={classes.background}>
+                        <Box     width={"100%"} >
                     <Box display={"flex"} justifyContent={"space-between"} width={"100%"} >
                         <NamePlate G={G} playerId={0} />
                         <NamePlate G={G} playerId={1} />
@@ -138,8 +136,8 @@ const NZGBoard = ({ctx, G, moves, ...rest }) => {
                     {/*    (playerId2.toString()) >= "1"  ? <CompanyStack G={G} playerId={playerId2} ctx={ctx} moves={moves} />  : null*/}
                     {/*}*/}
                     <Box display={"flex"} justifyContent={"space-between"}>
-                        <CompanyStack G={G} playerId={0} ctx={ctx} moves={moves}/>
-                        <CompanyStack G={G} playerId={1} ctx={ctx} moves={moves}/>
+                        <CompanyHand G={G} playerId={0} ctx={ctx} moves={moves}/>
+                        <CompanyHand G={G} playerId={1} ctx={ctx} moves={moves}/>
                     </Box>
                     <Box display={"flex"} justifyContent={"space-around"}>
                         <CarbonEvent2 G={G} ctx={ctx} />
@@ -147,16 +145,11 @@ const NZGBoard = ({ctx, G, moves, ...rest }) => {
                         <TeamCard />
 
                     </Box>
-                    <Droppable  accepts="value" onDrop={()=> {
-                    alert("accepted your drop");
-                    }
-                    } >
-                        {dragState => (
-                        <Box {...dragState.events} position={"fixed"} marginTop={24} borderRadius={50} width={240} height={170} className={classes.bid} marginLeft={"40%"}>
+
+                        <Box  position={"fixed"} marginTop={40} borderRadius={50} width={240} height={170} className={classes.bid} marginLeft={"40%"}>
                         <Typography className={classes.auction}>Auction</Typography>
                         </Box>
-                        )}
-                    </Droppable>
+
 
 
 
@@ -165,18 +158,18 @@ const NZGBoard = ({ctx, G, moves, ...rest }) => {
                 <Box display={"flex"} justifyContent={"space-between"} width={"1505px"} marginTop={16} >
 
 
-                    <CompanyStack G={G} playerId={2} ctx={ctx} moves={moves}/>
-                    <CompanyStack G={G} playerId={3} ctx={ctx} moves={moves}/>
+                    <CompanyHand G={G} playerId={2} ctx={ctx} moves={moves}/>
+                    <CompanyHand G={G} playerId={3} ctx={ctx} moves={moves}/>
                     </Box>
                     <Box marginTop={3} display={"flex"} justifyContent={"space-between"} width={"100%"}>
                         <NamePlate G={G} playerId={2} />
                         <NamePlate G={G} playerId={3} />
                     </Box>
 
+            <Card />
 
-
-<Card/>
     </div>
 
+    )
 };
 export default NZGBoard;

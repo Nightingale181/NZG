@@ -1,6 +1,7 @@
 export const companyDeck = [
     {
         id: 1,
+        order:1,
         idValue:1,
         synmain: "../img/company/14/background-1.png" ,
         companyName: 'Dwellings, Inc. ',
@@ -13,6 +14,7 @@ export const companyDeck = [
     },
     {
         id: 2,
+        order:2,
         idValue:2,
         synmain: "../img/company/14/background-1.png" ,
         companyName: 'Steaks, Inc. ',
@@ -26,6 +28,7 @@ export const companyDeck = [
     },
     {
         id: 3,
+        order:3,
         idValue:3,
         synmain: "../img/company/14/background-1.png" ,
         companyName: 'Smartphone, Inc. ',
@@ -38,6 +41,7 @@ export const companyDeck = [
     },
     {
         id: 4,
+        order:4,
         idValue:4,
         synmain: "../img/company/14/background-1.png" ,
         companyName: 'Airline, Inc. ',
@@ -50,6 +54,7 @@ export const companyDeck = [
     },
     {
         id: 5,
+        order:5,
         idValue:5,
         synmain: "../img/company/14/background-1.png" ,
         companyName: 'Aircraft, Inc. ',
@@ -62,6 +67,7 @@ export const companyDeck = [
     },
     {
         id: 6,
+        order:6,
         idValue:6,
         synmain: "../img/company/14/background-1.png" ,
         companyName: 'Packaging, Inc. ',
@@ -74,6 +80,7 @@ export const companyDeck = [
     },
     {
         id: 7,
+        order:7,
         idValue:7,
         synmain: "../img/company/14/background-1.png" ,
         companyName: 'Chemicals, Inc. ',
@@ -86,6 +93,7 @@ export const companyDeck = [
     },
     {
         id: 8,
+        order:8,
         idValue:8,
         synmain: "../img/company/14/background-1.png" ,
         companyName: 'Software, Inc. ',
@@ -98,6 +106,7 @@ export const companyDeck = [
     },
     {
         id: 9,
+        order:9,
         idValue:9,
         synmain: "../img/company/14/background-1.png" ,
         companyName: 'Cement, Inc. ',
@@ -110,6 +119,7 @@ export const companyDeck = [
     },
     {
         id: 10,
+        order:10,
         idValue:10,
         synmain: "../img/company/14/background-1.png" ,
         companyName: 'Shipping, Inc. ',
@@ -122,6 +132,7 @@ export const companyDeck = [
     },
     {
         id: 11,
+        order:11,
         idValue:11,
         synmain: "../img/company/14/background-1.png" ,
         companyName: 'Road Transport, Inc. ',
@@ -134,6 +145,7 @@ export const companyDeck = [
     },
     {
         id: 12,
+        order:12,
         idValue:12,
         synmain: "../img/company/14/background-1.png" ,
         companyName: 'Data & Wireless, Inc. ',
@@ -146,6 +158,7 @@ export const companyDeck = [
     },
     {
         id: 13,
+        order:13,
         idValue:13,
         synmain: "../img/company/14/background-1.png" ,
         companyName: 'Grid & Pipeline, Inc. ',
@@ -158,6 +171,7 @@ export const companyDeck = [
     },
     {
         id: 14,
+        order:14,
         idValue:14,
         synmain: "../img/company/14/background-1.png" ,
         companyName: 'Oil & Gas, Inc. ',
@@ -170,6 +184,7 @@ export const companyDeck = [
     },
     {
         id: 15,
+        order:15,
         idValue:15,
         synmain: "../img/company/14/background-1.png" ,
         companyName: 'Sand & Metal, Inc. ',
@@ -182,6 +197,7 @@ export const companyDeck = [
     },
     {
         id: 16,
+        order:16,
         idValue:16,
         synmain: "../img/company/16/background-16.png" ,
         companyName: 'Farm, Inc. ',
@@ -194,6 +210,7 @@ export const companyDeck = [
     },
     {
         id: 17,
+        order:18,
         idValue:17,
         synmain: "../img/company/14/background-1.png" ,
         companyName: 'Wind Power, Inc. ',
@@ -206,6 +223,7 @@ export const companyDeck = [
     },
     {
         id: 18,
+        order:18,
         idValue:18,
         synmain: "../img/company/14/background-1.png" ,
         companyName: 'Recycling, Inc. ',
