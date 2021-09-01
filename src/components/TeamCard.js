@@ -1,74 +1,56 @@
 import React, {useCallback, useState} from 'react';
 import {Box, Grid, Typography} from '@material-ui/core'
 import {makeStyles} from "@material-ui/core/styles";
-import {currentId} from "../Game";
-import CompanyCard from "./CompanyCard";
-import {
-    Draggable,
-    Droppable,
-    DragComponent,
-    DragState
-} from "react-dragtastic"
+import {GridContextProvider, GridDropZone, GridItem} from "react-grid-dnd";
+
+
+
+
 
 // const image = "../img/company/14/background-1.png"
 const useStyles = makeStyles(theme => ({
     mainSection: {
-      backgroundColor:"white",
-        marginTop:-110,
-        marginLeft:240,
-        zIndex:1,
-    },
-    dragComponent:{
-        width:58,
-        height:120,
-        borderRadius:15,
+        width:45,
+        height:90,
         backgroundColor:"white",
+        borderRadius:6,
+        backgroundPosition: 'center',
+        backgroundSize: '90%',
+        backgroundRepeat: 'no-repeat',
+        backgroundImage: `url(../img/tc1.png)`,
+        // position:"absolute",
+        alignContent:"center",
+        // margin:"0 auto",
+        zIndex:0,
+        marginRight:"1px",
     },
+
 }))
 
 
 //TODO get the card with props of current player,hook only changables
 
-const TeamCard = ({G,playerId,ctx,moves}) => {
+const TeamCard = ({G,card}) => {
     const classes = useStyles();
-    console.log(G);
+
+
 
 
 
 
 
     return (
-        <Box>
-        <Draggable id={"team"} type={"team"} >
-            {dragState => (
 
-                <Box {...dragState.events} width={58} height={120} borderRadius={15} className={classes.mainSection} textAlign={"center"}>
-                    Team Card
-                </Box>
-            )}
-        </Draggable>
-
-            <DragComponent for={"team"}>
-                {dragState => (
-
-                    <Box  className={classes.dragComponent} style={{
-                        position:"fixed",
-                        pointerEvents: 'none',
-                        left: dragState.x -10  ,
-                        top: dragState.y -30
-                    }} onDrag={()=> {
-                        console.log(1);
-                    }}>
-                        <Typography>Team card</Typography>
-                    </Box>
-                )}
-            </DragComponent>
+        <Box       className={classes.mainSection}>
 
         </Box>
 
 
+
+
+
     );
-};
+}
 
 
 export default TeamCard;

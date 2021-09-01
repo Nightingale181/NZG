@@ -1,14 +1,13 @@
-$main-font: 'Yanone Kaffeesatz',
-sans-serif;
+
 $new-white: rgb(248, 246, 234);
 $text-margin: 10px;
 
 body {
     height: 100%;
-    width: 100%;
+    width: 3000px;
     margin:0;
-    background: rgb(209, 182, 214);
-    font-family: $main-font;
+    //background: rgb(209, 182, 214);
+
     position: absolute;
     box-sizing: border-box;
 #root {
@@ -20,11 +19,11 @@ body {
     display: block;
     perspective: 1000px;
 .card-container {
-    height: 240px;
+    height: 180px;
     margin-top:-250px;
     padding: 0;
     top: 20px;
-    width: 240px;
+    width: 180px;
     margin-left: 40%;
     margin-right: 35%;
     position: relative;
@@ -60,7 +59,13 @@ body {
     /* front tile styles go here! */
 }
 .back {
-    background: $new-white;
+    //background: $new-white;
+    height: 180px;
+    width:90px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //background-image: url('public/img/carbonevent/carbonEventBack.png');
     transform: rotateY(-180deg);
     padding: 20px;
     font-size: 20px;
@@ -73,7 +78,7 @@ body {
     border-radius: 10px;
 }
 .title {
-    font-size: 34px;
+    font-size: 10px;
     //position: absolute;
     //margin-bottom: $text-margin;
     //margin-left: $text-margin;
@@ -93,7 +98,7 @@ body {
 .date {
     margin-top: $text-margin;
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 10px;
 }
 .read-more {
     font-size: 20px;
@@ -116,3 +121,4 @@ body {
 }
 }
 }
+

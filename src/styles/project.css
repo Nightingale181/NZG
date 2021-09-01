@@ -1,38 +1,96 @@
 
-.container {
-    display: flex;
+.container1 {
+
     touch-action: none;
-    width: 800px;
-    margin: 1rem auto;
+    width: 1519px;
+    height:190px;
+
+
 }
 
 .dropzone {
-    flex: 1;
-    height: 400px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 1rem;
-}
 
-.dropzone.left {
-    margin-right: 10px;
+    width:90px;
+    height:90px;
 }
+.mainCompanyDeck{
+    width:850px;
+    height:90px;
 
-.grid-item {
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
 }
-
-.grid-item-content {
-    width: 50px;
-    height: 50px;
-    box-sizing: border-box;
-    background: #08e;
+.handTeam{
+    width:200px;
+    height:90px;
+}
+.handTeam1{
+    align-items: flex-end;
+}
+.mainTeamDeck{
+    width:850px;
+    height:90px;
     display: flex;
-    justify-content: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
-    border-radius: 50%;
-}
+    justify-content: space-between;
+    }
+
+
+
+
+
+/*@font-face {*/
+/*    font-family: "DavidLibre";*/
+/*    src: local("DavidLibre"),*/
+/*    url(../fonts/DavidLibre-Regular.ttf) format("truetype");*/
+/*}*/
+
+/*p {*/
+/*    !*font-family: DavidLibre, serif;*!*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.container {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-around;*/
+/*}*/
+
+/*.column {*/
+/*    height: max-content;*/
+/*    min-height: 100px;*/
+/*    width: 160px;*/
+/*    margin: 10px;*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);*/
+/*    border: 2px solid #7d7d7d; !* Параметры границы *!*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*.do-it-column {*/
+/*    background-color: #fff0f0;*/
+/*}*/
+
+/*.in-progress-column {*/
+/*    background-color: #fef2e7;*/
+/*}*/
+
+/*.awaiting-review-column {*/
+/*    background-color: #fffada;*/
+/*}*/
+
+/*.done-column {*/
+/*    background-color: #f5ffe5;*/
+/*}*/
+
+/*.movable-item {*/
+/*    border-radius: 5px;*/
+/*    background-color: #fafdff;*/
+/*    height: 100px;*/
+/*    width: 140px;*/
+/*    margin: 10px auto;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);*/
+/*}*/
+

@@ -11,6 +11,7 @@ export const companyDeck = [
         actualValue: 2,
         actualCarbon: 2,
         companyBank: 0,
+        svgmain:"../img/company/cc12.png",
     },
     {
         id: 2,
@@ -24,7 +25,7 @@ export const companyDeck = [
         actualValue: 1,
         actualCarbon: 1,
         companyBank: 0,
-
+        svgmain:"../img/company/cc12.png",
     },
     {
         id: 3,
@@ -38,7 +39,7 @@ export const companyDeck = [
         actualValue: 3,
         actualCarbon: 1,
         companyBank: 0,
-    },
+        svgmain:"../img/company/cc12.png",    },
     {
         id: 4,
         order:4,
@@ -51,7 +52,7 @@ export const companyDeck = [
         actualValue: 4,
         actualCarbon: 2,
         companyBank: 0,
-    },
+        svgmain:"../img/company/cc12.png",    },
     {
         id: 5,
         order:5,
@@ -64,7 +65,7 @@ export const companyDeck = [
         actualValue: 4,
         actualCarbon: 2,
         companyBank: 0,
-    },
+        svgmain:"../img/company/cc12.png",    },
     {
         id: 6,
         order:6,
@@ -77,7 +78,7 @@ export const companyDeck = [
         actualValue: 2,
         actualCarbon: 1,
         companyBank: 0,
-    },
+        svgmain:"../img/company/cc12.png",    },
     {
         id: 7,
         order:7,
@@ -90,7 +91,7 @@ export const companyDeck = [
         actualValue: 4,
         actualCarbon: 2,
         companyBank: 0,
-    },
+        svgmain:"../img/company/cc12.png",    },
     {
         id: 8,
         order:8,
@@ -103,7 +104,7 @@ export const companyDeck = [
         actualValue: 4,
         actualCarbon: 1,
         companyBank: 0,
-    },
+        svgmain:"../img/company/cc12.png",    },
     {
         id: 9,
         order:9,
@@ -116,7 +117,7 @@ export const companyDeck = [
         actualValue: 3,
         actualCarbon: 2,
         companyBank: 0,
-    },
+        svgmain:"../img/company/cc12.png",    },
     {
         id: 10,
         order:10,
@@ -129,7 +130,7 @@ export const companyDeck = [
         actualValue: 4,
         actualCarbon: 3,
         companyBank: 0,
-    },
+        svgmain:"../img/company/cc12.png",    },
     {
         id: 11,
         order:11,
@@ -142,7 +143,7 @@ export const companyDeck = [
         actualValue: 5,
         actualCarbon: 3,
         companyBank: 0,
-    },
+        svgmain:"../img/company/cc12.png",    },
     {
         id: 12,
         order:12,
@@ -155,7 +156,7 @@ export const companyDeck = [
         actualValue: 3,
         actualCarbon: 2,
         companyBank: 0,
-    },
+        svgmain:"../img/company/cc12.png",    },
     {
         id: 13,
         order:13,
@@ -168,7 +169,7 @@ export const companyDeck = [
         actualValue: 3,
         actualCarbon: 1,
         companyBank: 0,
-    },
+        svgmain:"../img/company/cc12.png",    },
     {
         id: 14,
         order:14,
@@ -181,7 +182,7 @@ export const companyDeck = [
         actualValue: 6,
         actualCarbon: 3,
         companyBank: 0,
-    },
+        svgmain:"../img/company/cc12.png",    },
     {
         id: 15,
         order:15,
@@ -194,7 +195,7 @@ export const companyDeck = [
         actualValue: 2,
         actualCarbon: 1,
         companyBank: 0,
-    },
+        svgmain:"../img/company/cc12.png",    },
     {
         id: 16,
         order:16,
@@ -207,12 +208,13 @@ export const companyDeck = [
         actualValue: 3,
         actualCarbon: 2,
         companyBank: 0,
-    },
+        svgmain:"../img/company/cc12.png",    },
     {
         id: 17,
         order:18,
         idValue:17,
         synmain: "../img/company/14/background-1.png" ,
+        // svgmain:"../img/company/CompositeLayer.svg",
         companyName: 'Wind Power, Inc. ',
         type: 'resource',
         initialValue: 3,
@@ -220,7 +222,7 @@ export const companyDeck = [
         actualValue: 3,
         actualCarbon: 0,
         companyBank: 0,
-    },
+        svgmain:"../img/company/cc12.png",    },
     {
         id: 18,
         order:18,
@@ -233,7 +235,7 @@ export const companyDeck = [
         actualValue: 5,
         actualCarbon: 1,
         companyBank: 0,
-    },
+        svgmain:"../img/company/cc12.png",    },
 
 ];
 

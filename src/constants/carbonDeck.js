@@ -2,6 +2,8 @@ export const carbonDeck = [
 
     //TODO optimise and make it readable
     {
+        backImage:"../img/ce1test.png",
+        frontImage:"../img/carbonevent/EventCard1.png",
         event1: {
             id: [1],
             text:"Cities upcycle existing buildings to new efficient energy standarts",

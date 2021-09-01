@@ -165,13 +165,7 @@ const useStyles = makeStyles(theme => ({
     },
 }))
 
-const sortCards = (a,b) => {
-    if (a.order > b.order )
-        return 1
-    else {
-        return -1
-    }
-}
+
 
 //TODO get the card with props of current player,hook only changables
 
@@ -185,8 +179,6 @@ const CompanyHand = ({G,playerId,ctx,moves}) => {
     const [handCards, setHandCards] = useState(player.handCompanyDeck);
 
 
-    const [currentCard,setCurrentCard] = useState(null);
-
     const CompanyCard = ({card,key,G,ctx,moves}) => {
 
         const classes = useStyles(card);
@@ -197,46 +189,13 @@ const CompanyHand = ({G,playerId,ctx,moves}) => {
         //console.log(playerId);
 
 
-        function dragOverHandler(e,card) {
-            e.preventDefault()
 
-        }
-        function dragLeaveHandler(e) {
-
-        }
-        function dragStartHandler(e,card) {
-            console.log("drop", card);
-            setCurrentCard(card);
-        }
-        function dragEndHandler(e) {
-
-        }
-        function dropHandler(e,card) {
-            e.preventDefault()
-            console.log("drop", card);
-            setHandCards(handCards.map(c => {
-                if (c.id == card.id){
-                    return {...c, order:currentCard.order}
-                }
-                if (c.id == currentCard.id){
-                    return {...c, order:card.order}
-                }
-                return c
-            }))
-        }
 
 
 
         return (
 
             <Box
-                draggable={true}
-                onDragOver={(e) => dragOverHandler(e)}
-                onDragLeave={(e) => dragLeaveHandler(e)}
-                onDragStart={(e) => dragStartHandler(e,card)}
-                onDragEnd={(e) => dragEndHandler(e)}
-                onDrop={(e) => dropHandler(e,card)}
-
                 className={`${classes.mainSection}`}
             >
 

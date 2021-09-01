@@ -41,7 +41,7 @@ export class CarbonEvent2 extends React.Component {
             <div onClick={this.flip} onClick={this.flip2} className={"card-container" + (this.state.flipped ? " flipped" : "")}>
 
                 <Front G={this.props.G} ctx={this.props.ctx} />
-                <Back />
+                <Back img={"../../public/img/carbonevent/carbonEventBack.png"} />
             </div>
     </div>
         )
@@ -62,8 +62,8 @@ class Front extends React.Component {
 class Back extends React.Component {
     render() {
         return (
-            <div className="back">
-
+            <div className={"back"} >
+                <img src={this.props.img} alt="backcarbon"/>
             </div>
         )
     }

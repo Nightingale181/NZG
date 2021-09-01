@@ -9,18 +9,28 @@ import {companyDeck} from "./constants/companyDeck";
 import CompanyStack from "./components/CompanyStack";
 import NamePlate from "./components/NamePlate";
 import {number} from "prop-types";
-
+import {DragItem} from "./components/DragItem";
 import {Card} from "./components/Card";
 import CarbonEventCard from "./components/CarbonEventCard";
 import {CarbonEvent2} from "./components/CarbonEventCard2";
 import TeamCard from "./components/TeamCard";
 import CompanyHand from "./components/CompanyHand";
+import Doit from "./components/Doit";
+import {
+    GridContextProvider,
+    GridDropZone,
+    GridItem,
+    swap,
+    move
+} from "react-grid-dnd";
+import {Board} from "./components/TestCellDnd/Board";
+import {PlayerHand} from "./components/TestCellState/PlayerHand";
 
 
 
 const useStyles = makeStyles((theme) => ({
     body:{
-        backgroundColor:"darkgreen",
+        backgroundColor:"#cbcaca",
         margin:0,
         padding:0,
     },
@@ -30,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
         zIndex:2,
     },
     background:{
-        backgroundColor:"darkgreen",
+        backgroundColor:"#cbcaca",
         margin:0,
         padding:0,
     },
@@ -48,10 +58,10 @@ const NZGBoard = ({ctx, G, moves, ...rest }) => {
 
     // const [hidden3,setHidden3] = useState(true);
     // const [hidden4,setHidden4] = useState(true);
-    const [playerId1,setPlayerId1] = useState(-5);
-    const [playerId2,setPlayerId2] = useState(-5);
-    const [playerId3,setPlayerId3] = useState(-5);
-    const [playerId4,setPlayerId4] = useState(-5);
+    // const [playerId1,setPlayerId1] = useState(-5);
+    // const [playerId2,setPlayerId2] = useState(-5);
+    // const [playerId3,setPlayerId3] = useState(-5);
+    // const [playerId4,setPlayerId4] = useState(-5);
     // const [cardId1 , setCardId1] = useState(currentId);
     // const [cardId2 , setCardId2] = useState(currentId);
     // const [cardId3 , setCardId3] = useState(currentId);
@@ -64,6 +74,11 @@ const NZGBoard = ({ctx, G, moves, ...rest }) => {
 
 
     const classes = useStyles();
+
+
+
+
+
 
     // console.log(ctx.currentPlayer);
     // console.log(G);
@@ -94,81 +109,113 @@ const NZGBoard = ({ctx, G, moves, ...rest }) => {
     // let actualId = currentId - 1;
 
 
-    const onDraw = useCallback(() => {
-        // moves.InitialDraw();
-         // setPlayerId1(ctx.currentPlayer);
-         console.log(playerId1);
+    // const onDraw = useCallback(() => {
+    //     // moves.InitialDraw();
+    //      // setPlayerId1(ctx.currentPlayer);
+    //      console.log(playerId1);
+    //
+    //      if (ctx.currentPlayer.toString() === "0")
+    //      {
+    //         setPlayerId1(ctx.currentPlayer);
+    //
+    //     } if (ctx.currentPlayer.toString() === "1")
+    //     {
+    //         setPlayerId2(ctx.currentPlayer);
+    //
+    //     } if ( ctx.currentPlayer.toString() === "2")
+    //     {
+    //         setPlayerId3(ctx.currentPlayer);
+    //     }if ( ctx.currentPlayer.toString() === "3")
+    //     {
+    //         setPlayerId4(ctx.currentPlayer);
+    //     // moves,setHidden1,hidden1,hidden2,hidden3,hidden4,cardId1,cardId2,cardId3,cardId4,playerId1,playerId2,playerId3,playerId4,ctx,G,actualCard1,actualCard2,actualCard3,actualCard4
+    //     }
+    //
+    // }, [moves,G,ctx,playerId1,playerId2,playerId3,playerId4]);
 
-         if (ctx.currentPlayer.toString() === "0")
-         {
-            setPlayerId1(ctx.currentPlayer);
-
-        } if (ctx.currentPlayer.toString() === "1")
-        {
-            setPlayerId2(ctx.currentPlayer);
-
-        } if ( ctx.currentPlayer.toString() === "2")
-        {
-            setPlayerId3(ctx.currentPlayer);
-        }if ( ctx.currentPlayer.toString() === "3")
-        {
-            setPlayerId4(ctx.currentPlayer);
-        // moves,setHidden1,hidden1,hidden2,hidden3,hidden4,cardId1,cardId2,cardId3,cardId4,playerId1,playerId2,playerId3,playerId4,ctx,G,actualCard1,actualCard2,actualCard3,actualCard4
-        }
-
-    }, [moves,G,ctx,playerId1,playerId2,playerId3,playerId4]);
-
-
+    // function onChange(sourceId, sourceIndex, targetIndex, targetId) {
+    //     if (targetId) {
+    //         const result = move(
+    //             items[sourceId],
+    //             items[targetId],
+    //             sourceIndex,
+    //             targetIndex
+    //         );
+    //         return setItems({
+    //             ...items,
+    //             [sourceId]: result[0],
+    //             [targetId]: result[1]
+    //         });
+    //     }
+    //
+    //     const result = swap(items[sourceId], sourceIndex, targetIndex);
+    //     return setItems({
+    //         ...items,
+    //         [sourceId]: result
+    //     });
+    // }
 
 
     return(
+        // <DndProvider backend={HTML5Backend}>
+
         <div className={classes.background}>
-                        <Box     width={"100%"} >
-                    <Box display={"flex"} justifyContent={"space-between"} width={"100%"} >
-                        <NamePlate G={G} playerId={0} />
-                        <NamePlate G={G} playerId={1} />
-                    </Box>
-                    {/*{*/}
-                    {/*    (playerId1.toString()) >= "0"  ? <CompanyStack G={G} playerId={playerId1} ctx={ctx} moves={moves} />  : null*/}
-                    {/*}*/}
+                {/*        <Box     width={"100%"} >*/}
+                {/*    <Box display={"flex"} justifyContent={"space-between"} width={"100%"} >*/}
+                {/*        <NamePlate G={G} playerId={0} />*/}
+                {/*        <NamePlate G={G} playerId={1} />*/}
+                {/*    </Box>*/}
+                {/*    /!*{*!/*/}
+                {/*    /!*    (playerId1.toString()) >= "0"  ? <CompanyStack G={G} playerId={playerId1} ctx={ctx} moves={moves} />  : null*!/*/}
+                {/*    /!*}*!/*/}
 
-                    {/*{*/}
-                    {/*    (playerId2.toString()) >= "1"  ? <CompanyStack G={G} playerId={playerId2} ctx={ctx} moves={moves} />  : null*/}
-                    {/*}*/}
-                    <Box display={"flex"} justifyContent={"space-between"}>
-                        <CompanyHand G={G} playerId={0} ctx={ctx} moves={moves}/>
-                        <CompanyHand G={G} playerId={1} ctx={ctx} moves={moves}/>
-                    </Box>
-                    <Box display={"flex"} justifyContent={"space-around"}>
-                        <CarbonEvent2 G={G} ctx={ctx} />
+                {/*    /!*{*!/*/}
+                {/*    /!*    (playerId2.toString()) >= "1"  ? <CompanyStack G={G} playerId={playerId2} ctx={ctx} moves={moves} />  : null*!/*/}
+                {/*    /!*}*!/*/}
+                {/*    <Box display={"flex"} justifyContent={"space-between"}>*/}
+                {/*        <CompanyHand G={G} playerId={0} ctx={ctx} moves={moves}/>*/}
+                {/*        <CompanyHand G={G} playerId={1} ctx={ctx} moves={moves}/>*/}
+                {/*    </Box>*/}
+                {/*    <Box display={"flex"} justifyContent={"space-around"}>*/}
+                {/*        <CarbonEvent2 G={G} ctx={ctx} />*/}
 
-                        <TeamCard />
+                {/*        <TeamCard />*/}
 
-                    </Box>
+                {/*    </Box>*/}
 
-                        <Box  position={"fixed"} marginTop={40} borderRadius={50} width={240} height={170} className={classes.bid} marginLeft={"40%"}>
-                        <Typography className={classes.auction}>Auction</Typography>
-                        </Box>
-
-
+                {/*        <Box  position={"fixed"} marginTop={40} borderRadius={50} width={240} height={170} className={classes.bid} marginLeft={"40%"}>*/}
+                {/*        <Typography className={classes.auction}>Auction</Typography>*/}
+                {/*        </Box>*/}
 
 
-                </Box>
-
-                <Box display={"flex"} justifyContent={"space-between"} width={"1505px"} marginTop={16} >
 
 
-                    <CompanyHand G={G} playerId={2} ctx={ctx} moves={moves}/>
-                    <CompanyHand G={G} playerId={3} ctx={ctx} moves={moves}/>
-                    </Box>
-                    <Box marginTop={3} display={"flex"} justifyContent={"space-between"} width={"100%"}>
-                        <NamePlate G={G} playerId={2} />
-                        <NamePlate G={G} playerId={3} />
-                    </Box>
+                {/*</Box>*/}
 
-            <Card />
+                {/*<Box display={"flex"} justifyContent={"space-between"} width={"1505px"} marginTop={16} >*/}
+
+
+                {/*    <CompanyHand G={G} playerId={2} ctx={ctx} moves={moves}/>*/}
+                {/*    <CompanyHand G={G} playerId={3} ctx={ctx} moves={moves}/>*/}
+                {/*    </Box>*/}
+                {/*    <Box marginTop={3} display={"flex"} justifyContent={"space-between"} width={"100%"}>*/}
+                {/*        <NamePlate G={G} playerId={2} />*/}
+                {/*        <NamePlate G={G} playerId={3} />*/}
+                {/*    </Box>*/}
+
+            {/*<DragItem/>*/}
+
+
+
+
+            <Card G={G} ctx={ctx}  />
+
+            {/* <TestBoardDnd G={G}/> */}
+            {/*<Board G={G}/>*/}
+            {/*<PlayerHand G={G}/>*/}
 
     </div>
+    // {/*</DndProvider>*/}
 
     )
 };

@@ -14,10 +14,18 @@ import {
 const useStyles = makeStyles(theme => ({
     mainSection: {
         // display: "flex",
-    width: 120,
-        height: 50,
-    borderRadius: 20,
-    backgroundColor:"green",
+    width: 90,
+        height: 90,
+    borderRadius: 6,
+        backgroundColor:"white",
+        backgroundPosition: 'center',
+        backgroundSize: '101%',
+        backgroundRepeat: 'no-repeat',
+        backgroundImage: `url(../img/nameplate1.png)`,
+        // position:"absolute",
+        alignContent:"center",
+        // margin:"0 auto",
+        zIndex:0,
     },
     nameSection:{
         width:"100%",
@@ -32,7 +40,7 @@ const useStyles = makeStyles(theme => ({
 
     },
     coinImg: {
-        height:"37%",
+        height:"30%",
         width:"85%",
         marginLeft:"5%",
     },
@@ -40,25 +48,25 @@ const useStyles = makeStyles(theme => ({
         backgroundColor:"white",
         borderRadius:50,
         border:"3px solid #539bc5",
-        height:"106%",
+        height:"61%",
         width:"22%",
     },
     carbonImg:{
         backgroundColor: "black",
         border: "3px solid grey",
         borderRadius:50,
-        height:"106%",
+        height:"61%",
         width:"22%",
     },
     teamImg:{
         backgroundColor:"lightskyblue",
         borderRadius:50,
         border:"3px solid purple",
-        height:"106%",
+        height:"61%",
         width:"22%",
     },
     coinValue: {
-        height:"37%",
+        height:"30%",
         width:"85%",
         marginLeft:"5%",
     },
@@ -72,31 +80,28 @@ const NamePlate = ({G,playerId}) => {
     const classes = useStyles();
 
     return (
-        <Droppable accepts="value" onDrop={()=> {
-            alert("accepted your drop");
-        }
-        }>
-            {dragState =>
-        <Box  {...dragState.events} position="relative" className={classes.mainSection}>
-            <Box className={classes.nameSection} >
-                <Typography className={classes.nameText}>
-                            Business Leader
-                </Typography>
-            </Box>
-            <Box display={"flex"} justifyContent={"space-between"} className={classes.coinImg}>
-                <Box className={classes.coinsImg}></Box>
-                <Box className={classes.carbonImg}></Box>
-                <Box className={classes.teamImg}></Box>
-            </Box>
-            {/*<Box display={"flex"} justifyContent={"space-between"} className={classes.coinValue}>*/}
+
+        <Box   position="relative" className={classes.mainSection}>
+
+            {/*<Box className={classes.nameSection} >*/}
+            {/*    <Typography className={classes.nameText}>*/}
+            {/*                Business Leader*/}
+            {/*    </Typography>*/}
+            {/*</Box>*/}
+            {/*<Box display={"flex"} justifyContent={"space-between"} className={classes.coinImg}>*/}
             {/*    <Box className={classes.coinsImg}></Box>*/}
             {/*    <Box className={classes.carbonImg}></Box>*/}
             {/*    <Box className={classes.teamImg}></Box>*/}
             {/*</Box>*/}
-        </Box>}
-            </Droppable>
-    );
-};
+            {/*<Box display={"flex"} justifyContent={"space-between"} className={classes.coinValue} marginBottom={"-10%"}>*/}
+            {/*    <Box className={classes.coinsImg}></Box>*/}
+            {/*    <Box className={classes.carbonImg}></Box>*/}
+            {/*    <Box className={classes.teamImg}></Box>*/}
+            {/*</Box>*/}
+        </Box>
+
+
+)};
 
 
 export default NamePlate;

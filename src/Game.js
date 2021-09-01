@@ -88,7 +88,7 @@ export function getInitialState(ctx) {
     G.currentCarbon.push(topCard);
 
     for (let i = 0; i < 4; i++) {
-        for(let k = 0; k < 4; k++){
+        for(let k = 0; k < 3; k++){
             topCard = G.companyDeck.shift();
             G.players[i].handCompanyDeck.push(topCard);
         }
@@ -96,7 +96,7 @@ export function getInitialState(ctx) {
 
     }
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 2; i++) {
         for(let k = 0;k < 4;k++){
         topCard = G.teamDeck.shift();
         G.players[k].handTeamDeck.push(topCard);
@@ -165,7 +165,7 @@ export const Game = {
                 DiscardTeam: (G, ctx, id) => {
                     topCard = G.players[ctx.currentPlayer].handTeamDeck.find((item) => item.id === id);
                     G.teamDeck.push(topCard);
-                    findIndex = G.players[ctx.currentPlayer].handTeamDeck.findIndex(i => i.id === id);
+                   const findIndex = G.players[ctx.currentPlayer].handTeamDeck.findIndex(i => i.id === id);
                     if (findIndex > -1) {
                         G.players[ctx.currentPlayer].handTeamDeck.splice(findIndex, 1);
                     }
