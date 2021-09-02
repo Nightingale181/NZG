@@ -88,6 +88,8 @@ export const teamDeck  = [
         reduceCarb: true,
         changeEvent: false,
         counter: ["GSO"],
+        hui:"bolshoy",
+
     },
     {
         id:30,
