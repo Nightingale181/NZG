@@ -1,0 +1,30 @@
+<Box     width={"100%"} >
+    <Box display={"flex"} justifyContent={"space-between"} width={"100%"} >
+        <NamePlate G={G} playerId={0} />
+        <NamePlate G={G} playerId={1} />
+    </Box>
+    {
+        (playerId1.toString()) >= "0"  ? <CompanyStack G={G} playerId={playerId1} ctx={ctx} moves={moves} />  : null
+    }
+
+    {
+        (playerId2.toString()) >= "1"  ? <CompanyStack G={G} playerId={playerId2} ctx={ctx} moves={moves} />  : null
+    }
+    <Box display={"flex"} justifyContent={"space-between"}>
+
+
+    </Box>
+    <Box display={"flex"} justifyContent={"space-around"}>
+        <CarbonEvent2 G={G} ctx={ctx} />
+        <TeamCard />
+
+    </Box>
+
+    <Box  position={"fixed"} marginTop={40} borderRadius={50} width={240} height={170} className={classes.bid} marginLeft={"40%"}>
+        <Typography className={classes.auction}>Auction</Typography>
+    </Box>
+
+
+
+
+</Box>
