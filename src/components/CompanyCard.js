@@ -173,10 +173,10 @@ const useStyles =  makeStyles(theme => ({
 //TODO get the card with props of current player,hook only changables
 
 
-const CompanyCard = ({G,item,key,ID}) => {
+const CompanyCard = ({G,item,key,playerID}) => {
     // const card = G.players[0].handCompanyDeck[0]
     const classes = useStyles(item);
-    console.log(ID)
+    // console.log(ID)
     // console.log(currentId)
     // const [{ isDragging }, drag] = useDrag({
     //     type: "companyCard",

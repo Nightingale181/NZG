@@ -41,6 +41,7 @@ const useStyles = makeStyles((theme) => ({
     },
     background:{
         backgroundColor:"#cbcaca",
+        height:"100vw",
         margin:0,
         padding:0,
     },

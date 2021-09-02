@@ -7,7 +7,7 @@ import { COLUMN_NAMES } from "./constants";
 import { tasks } from "./tasks";
 import CompanyCard from "../CompanyCard";
 
-const MovableItem = ({name, index, currentColumnName, moveCardHandler, setItems,G,ID}) => {
+const MovableItem = ({name, index, currentColumnName, moveCardHandler, setItems,G,playerID,item}) => {
     const changeItemColumn = (currentItem, columnName) => {
         setItems((prevState) => {
             return prevState.map(e => {
@@ -19,7 +19,7 @@ const MovableItem = ({name, index, currentColumnName, moveCardHandler, setItems,
         });
     }
 
-    console.log(ID);
+    // console.log(ID);
 
     const ref = useRef(null);
 
@@ -113,12 +113,12 @@ const MovableItem = ({name, index, currentColumnName, moveCardHandler, setItems,
 
     return (
         <div ref={ref} style={{opacity}}>
-            <CompanyCard  G={G} item={G.players[0].handCompanyDeck[0]} playerID={ID}/>
+            <CompanyCard  G={G} item={item} playerID={playerID}/>
         </div>
     )
 }
 
-const Column = ({children, className, title}) => {
+const Column = ({children, className, title,G,ctx,ID}) => {
     const [{isOver, canDrop}, drop] = useDrop({
         accept: 'Our first type',
         drop: () => ({name: title}),
@@ -151,7 +151,7 @@ const Column = ({children, className, title}) => {
     // };
 
     return (
-        <div ref={drop} className={className} >
+        <div ref={drop} className={className}>
             {/* <p>{title}</p> */}
             {children}
         </div>
@@ -160,7 +160,7 @@ const Column = ({children, className, title}) => {
 // const [items, setItems] = useState(tasks);
 
 export const PlayerHand = ({G,ctx,ID}) => {
-console.log(G);
+console.log(ID);
     const [items, setItems] = useState(tasks);
 
     const isMobile = window.innerWidth < 600;
@@ -195,7 +195,7 @@ console.log(G);
                              index={index}
                              moveCardHandler={moveCardHandler}
                              G={G}
-                             item = {G.players[0].handCompanyDeck[0]}
+                             item = {G.players[ID].handCompanyDeck[0]}
                              playerID={ID}
                 />
             ))
