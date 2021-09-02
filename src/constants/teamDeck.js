@@ -96,5 +96,6 @@ export const teamDeck  = [
         reduceCarb: false,
         changeEvent: true,
         counter: ["GRO"],
+        hui:"bolshoy",
     },
     ]
