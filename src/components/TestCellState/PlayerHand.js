@@ -195,7 +195,7 @@ console.log(ID);
                              index={index}
                              moveCardHandler={moveCardHandler}
                              G={G}
-                             item = {G.players[ID].handCompanyDeck[0]}
+                             item = {G.companyDeck[0]}
                              playerID={ID}
                 />
             ))

@@ -14,14 +14,15 @@ import {
 const useStyles = makeStyles(theme => ({
     mainSection: {
         // display: "flex",
-    width: 90,
-        height: 90,
+    width: "117px",
+        height: "117px",
     borderRadius: 6,
+        border: "0.5px solid #a49f9f",
         backgroundColor:"white",
         backgroundPosition: 'center',
         backgroundSize: '101%',
         backgroundRepeat: 'no-repeat',
-        backgroundImage: `url(../img/nameplate1.png)`,
+        backgroundImage: `url(${process.env.PUBLIC_URL + "/img/np1.png"})`,
         // position:"absolute",
         alignContent:"center",
         // margin:"0 auto",

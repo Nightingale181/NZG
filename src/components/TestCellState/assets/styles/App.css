@@ -4,21 +4,21 @@
 
 
 .container {
-    width: 375px;
-    height: 180px;
+    width: 472px;
+    height: 233px;
     display: flex;
     flex-wrap: wrap;
     /*justify-content: space-around;*/
 }
 
 .column {
-    height: 90px;
+    height: 116px;
     /*min-height: 90px;*/
-    width: 90px;
+    width: 116px;
     /*margin: 10px;*/
-    border-radius: 6px;
+    border-radius: 9px;
     /*box-shadow: 1px 1px 3px rgba(0,0,0,0.5);*/
-    border: 0.5px solid #7d7d7d; /* Параметры границы */
+    border: 0.5px solid #a49f9f; /* Параметры границы */
     display: flex;
     /*margin-left: 2px;*/
     /*margin-top: 2px;*/

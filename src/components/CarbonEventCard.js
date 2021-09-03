@@ -14,34 +14,36 @@ import CarbonValue from "./CarbonValue";
 
 // const image = "../img/company/14/background-1.png"
 const useStyles =  makeStyles(theme => ({
-    backCarbon: carbonDeck =>({
-        width:180,
-        height:180,
-        backgroundColor:"white",
-        borderRadius:20,
-        backgroundPosition: 'center',
-        backgroundSize: '101%',
-        backgroundRepeat: 'no-repeat',
-        backgroundImage: `url(${carbonDeck[0].backImage})`,
-        // position:"absolute",
-        alignContent:"center",
-        margin:"0 auto",
-        zIndex:0,
-        border: '1px solid grey',
-    }),
-    frontCarbon:{
-        width:180,
-        height:180,
+    backCarbon: pic =>({
+        width:232,
+        height:232,
         backgroundColor:"white",
         borderRadius:20,
         backgroundPosition: 'center',
         backgroundSize: '90%',
         backgroundRepeat: 'no-repeat',
-        backgroundImage: `url(${carbonDeck[0].frontImage})`,
+        backgroundImage: `url(${process.env.PUBLIC_URL + "/img/carbonevent/carbonEventBack.png"})`,
+        // ${process.env.PUBLIC_URL + '/img/company/cc12.png'}/
         // position:"absolute",
         alignContent:"center",
         margin:"0 auto",
         zIndex:0,
+        border: '0.5px solid #a49f9f',
+    }),
+    frontCarbon:{
+        width:232,
+        height:232,
+        backgroundColor:"white",
+        borderRadius:20,
+        backgroundPosition: 'center',
+        backgroundSize: '101%',
+        backgroundRepeat: 'no-repeat',
+        backgroundImage: `url(${process.env.PUBLIC_URL + "/img/ce1test.png"})`,
+        // position:"absolute",
+        alignContent:"center",
+        margin:"0 auto",
+        zIndex:0,
+        border: '0.5px solid #a49f9f',
     },
 }))
 
@@ -50,10 +52,11 @@ const useStyles =  makeStyles(theme => ({
 
 const CarbonEventCard = () => {
     const [event,setEvent] = useState(1)
+
     const classes = useStyles(carbonDeck);
 
     return (
-        <Box display={"flex"} justifyContent={"space-between"} width={360} height={180}     >
+        <Box display={"flex"} justifyContent={"space-between"} width={"470px"} height={"232px"}     >
             <Box display={"inline-block"} onClick={()=>{
                 setEvent(event + 1)
             }}

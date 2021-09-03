@@ -11,7 +11,7 @@ export const companyDeck = [
         actualValue: 2,
         actualCarbon: 2,
         companyBank: 0,
-        svgmain:"../img/company/cc12.png",
+        svgmain:'/img/company/cc12.png',
     },
     {
         id: 2,

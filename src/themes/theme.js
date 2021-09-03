@@ -5,6 +5,9 @@ export const theme = createMuiTheme({
     modalRadius: 10,
     border: '1px solid #BDBDBD',
     buttonPadding: '0 15px',
+    spacing: {
+        main:"57,5px",
+    },
     typography: { // html font = 16px
         body1: {
             fontSize: '1.3125rem' // 21px

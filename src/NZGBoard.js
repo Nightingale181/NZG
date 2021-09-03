@@ -29,11 +29,7 @@ import {PlayerHand} from "./components/TestCellState/PlayerHand";
 
 
 const useStyles = makeStyles((theme) => ({
-    body:{
-        backgroundColor:"#cbcaca",
-        margin:0,
-        padding:0,
-    },
+
     bid:{
         backgroundColor: "green",
         border: "5px solid white",
@@ -41,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     },
     background:{
         backgroundColor:"#cbcaca",
-        height:"100vw",
+        height:"955px",
         margin:0,
         padding:0,
     },

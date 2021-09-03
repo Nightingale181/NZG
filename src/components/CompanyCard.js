@@ -14,18 +14,19 @@ import { useDrag } from 'react-dnd';
 
 
 // const image = "../img/company/14/background-1.png"
-const useStyles =  makeStyles(theme => ({
+const useStyles =  makeStyles(theme => (
+    {
     mainSection:   {
         // display: "flex",
-        width: 90,
-        height: 90 ,
-        borderRadius: 6,
+        width:  "116px",
+        height: "116px" ,
+        borderRadius: 9,
         backgroundColor:"white",
         border:"black",
     },
 
     backImage: card =>( {
-        backgroundImage:`url(${card.svgmain})`,
+        backgroundImage:`url(${process.env.PUBLIC_URL + '/img/company/cc12.png'})`,
         backgroundPosition: 'center',
         backgroundSize: '101%',
         backgroundRepeat: 'no-repeat',
@@ -193,7 +194,7 @@ const CompanyCard = ({G,item,key,playerID}) => {
 
     return (
         <>
-
+            {/*<img src={process.env.PUBLIC_URL + '/img/company/cc12.png'} alt=""/>*/}
         <Box className={`${classes.mainSection}`}>
 
 

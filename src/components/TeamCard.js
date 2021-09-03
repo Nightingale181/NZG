@@ -10,19 +10,20 @@ import {GridContextProvider, GridDropZone, GridItem} from "react-grid-dnd";
 // const image = "../img/company/14/background-1.png"
 const useStyles = makeStyles(theme => ({
     mainSection: {
-        width:45,
-        height:90,
+        width:"57px",
+        border: "0.5px solid #a49f9f",
+        height:"116px",
         backgroundColor:"white",
         borderRadius:6,
         backgroundPosition: 'center',
-        backgroundSize: '90%',
+        backgroundSize: '103%',
         backgroundRepeat: 'no-repeat',
-        backgroundImage: `url(../img/tc1.png)`,
+        backgroundImage: `url(${process.env.PUBLIC_URL + "/img/tc2.png"})`,
         // position:"absolute",
         alignContent:"center",
         // margin:"0 auto",
         zIndex:0,
-        marginRight:"1px",
+        // marginRight:"1px",
     },
 
 }))
