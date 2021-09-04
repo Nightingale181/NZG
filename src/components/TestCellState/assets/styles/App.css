@@ -4,8 +4,8 @@
 
 
 .container {
-    width: 472px;
-    height: 233px;
+    /*width: 472px;*/
+    /*height: 233px;*/
     display: flex;
     flex-wrap: wrap;
     /*justify-content: space-around;*/

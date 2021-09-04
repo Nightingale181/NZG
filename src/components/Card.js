@@ -342,7 +342,7 @@ export const Card = ({G,ctx}) => {
                 {/*</Box>*/}
             </Box>
             <Box display={"flex"} justifyContent={"space-between"} className={"container1"}>
-                <Box width={"472px"}  display={"flex"} flexWrap={"wrap"}  justifyContent={"space-between"} >
+                <Box width={"490px"}  display={"flex"} flexWrap={"wrap"}  justifyContent={"space-between"} >
 
                     <PlayerHand G={G} ctx={ctx} ID={0}/>
 
@@ -351,7 +351,7 @@ export const Card = ({G,ctx}) => {
                 </Box>
                 <CarbonEventCard/>
 
-                <Box width={"472px"}  display={"flex"} flexWrap={"wrap"} justifyContent={"space-between"} >
+                <Box width={"490px"}  display={"flex"} flexWrap={"wrap"} justifyContent={"space-between"} >
                     <PlayerHand G={G} ctx={ctx} ID={1}/>
 
                 </Box>
@@ -416,11 +416,11 @@ export const Card = ({G,ctx}) => {
                     {/*</GridDropZone>*/}
                 {/*</Box>*/}
 
-                <Box width={"472px"}  display={"flex"} flexWrap={"wrap"} justifyContent={"space-between"} >
+                <Box width={"490px"}  display={"flex"} flexWrap={"wrap"} justifyContent={"space-between"} >
                     <PlayerHand G={G} ctx={ctx} ID={2}  />
                 </Box>
 
-                <Box width={"472px"}  display={"flex"} flexWrap={"wrap"} justifyContent={"space-between"} >
+                <Box width={"490px"}  display={"flex"} flexWrap={"wrap"} justifyContent={"space-between"} >
                     <PlayerHand G={G} ctx={ctx} ID={3}/>
                 </Box>
                 {/*<GridDropZone*/}
