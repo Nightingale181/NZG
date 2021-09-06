@@ -14,24 +14,25 @@ import {
 const useStyles = makeStyles(theme => ({
     mainSection: {
         // display: "flex",
-    width: "117px",
-        height: "117px",
-    borderRadius: 6,
+    width: "200px",
+        height: "200px",
+    borderRadius: "15px",
         border: "0.5px solid #a49f9f",
         backgroundColor:"white",
         backgroundPosition: 'center',
-        backgroundSize: '101%',
+        backgroundSize: '100%',
         backgroundRepeat: 'no-repeat',
         backgroundImage: `url(${process.env.PUBLIC_URL + "/img/np1.png"})`,
         // position:"absolute",
         alignContent:"center",
         // margin:"0 auto",
         zIndex:0,
+
     },
     nameSection:{
         width:"100%",
         // height:"20%",
-        paddingTop:"5%",
+        // paddingTop:"5%",
     },
     nameText:{
         color:"white",

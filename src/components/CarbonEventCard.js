@@ -15,10 +15,10 @@ import CarbonValue from "./CarbonValue";
 // const image = "../img/company/14/background-1.png"
 const useStyles =  makeStyles(theme => ({
     backCarbon: pic =>({
-        width:232,
-        height:232,
+        width:400,
+        height:400,
         backgroundColor:"white",
-        borderRadius:20,
+        borderRadius:38,
         backgroundPosition: 'center',
         backgroundSize: '90%',
         backgroundRepeat: 'no-repeat',
@@ -31,19 +31,19 @@ const useStyles =  makeStyles(theme => ({
         border: '0.5px solid #a49f9f',
     }),
     frontCarbon:{
-        width:232,
-        height:232,
+        width:400,
+        height:400,
         backgroundColor:"white",
-        borderRadius:20,
+        borderRadius:38,
         backgroundPosition: 'center',
-        backgroundSize: '101%',
+        backgroundSize: '100%',
         backgroundRepeat: 'no-repeat',
         backgroundImage: `url(${process.env.PUBLIC_URL + "/img/ce1test.png"})`,
         // position:"absolute",
         alignContent:"center",
         margin:"0 auto",
         zIndex:0,
-        border: '0.5px solid #a49f9f',
+        // border: '0.5px solid #a49f9f',
     },
 }))
 
@@ -56,7 +56,7 @@ const CarbonEventCard = () => {
     const classes = useStyles(carbonDeck);
 
     return (
-        <Box display={"flex"} justifyContent={"space-between"} width={"470px"} height={"232px"}     >
+        <Box display={"flex"} justifyContent={"space-between"} width={"800px"} height={"400px"}  marginTop={"-200px"}   >
             <Box display={"inline-block"} onClick={()=>{
                 setEvent(event + 1)
             }}

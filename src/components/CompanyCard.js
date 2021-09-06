@@ -18,9 +18,9 @@ const useStyles =  makeStyles(theme => (
     {
     mainSection:   {
         // display: "flex",
-        width:  "116px",
-        height: "116px" ,
-        borderRadius: 9,
+        width:  "200px",
+        height: "200px" ,
+        borderRadius:"15px",
         backgroundColor:"white",
         border:"black",
     },
@@ -28,7 +28,7 @@ const useStyles =  makeStyles(theme => (
     backImage: card =>( {
         backgroundImage:`url(${process.env.PUBLIC_URL + '/img/Steaks.svg'})`,
         backgroundPosition: 'center',
-        backgroundSize: '101%',
+        backgroundSize: '100%',
         backgroundRepeat: 'no-repeat',
         height: '100%',
         width: '100%',

@@ -71,7 +71,7 @@ const MovableItem = ({name, index, currentColumnName, moveCardHandler, setItems,
 
             if (dropResult) {
                 const {name} = dropResult;
-                const {oneC, twoC, threeC, fourC,fiveC,sixC,sevenC,eightC} = COLUMN_NAMES;
+                const {oneC, twoC, threeC, fourC,fiveC,sixC,sevenC,eightC,nineC,tenC} = COLUMN_NAMES;
                 switch (name) {
                     case twoC:
                         changeItemColumn(item, twoC);
@@ -96,6 +96,12 @@ const MovableItem = ({name, index, currentColumnName, moveCardHandler, setItems,
                         break;
                     case eightC:
                         changeItemColumn(item,eightC );
+                        break;
+                    case nineC:
+                        changeItemColumn(item,nineC );
+                        break;
+                    case tenC:
+                        changeItemColumn(item,tenC );
                         break;
                     default:
                         break;
@@ -201,7 +207,7 @@ console.log(ID);
             ))
     };
 
-    const {oneC, twoC, threeC, fourC,fiveC,sixC,sevenC,eightC} = COLUMN_NAMES;
+    const {oneC, twoC, threeC, fourC,fiveC,sixC,sevenC,eightC,nineC,tenC} = COLUMN_NAMES;
 
     return (
         <div className="container">
@@ -229,6 +235,12 @@ console.log(ID);
                 </Column>
                 <Column title={eightC} className='column done-column'>
                     {returnItemsForColumn(eightC)}
+                </Column>
+                <Column title={nineC} className='column done-column'>
+                    {returnItemsForColumn(nineC)}
+                </Column>
+                <Column title={tenC} className='column done-column'>
+                    {returnItemsForColumn(tenC)}
                 </Column>
             </DndProvider>
         </div>

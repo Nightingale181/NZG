@@ -7,4 +7,6 @@ export const COLUMN_NAMES = {
     sixC: "six ",
     sevenC: "seven ",
     eightC: " eight",
+    nineC: "nine",
+    tenC: "ten",
 }

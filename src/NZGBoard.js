@@ -37,9 +37,10 @@ const useStyles = makeStyles((theme) => ({
     },
     background:{
         backgroundColor:"#cbcaca",
-        height:"955px",
+        height:"2000px",
+        width:"3300px",
         margin:0,
-        padding:0,
+        padding:"150px",
     },
     auction:{
         textAlign:"center",

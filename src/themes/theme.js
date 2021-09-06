@@ -6,7 +6,7 @@ export const theme = createMuiTheme({
     border: '1px solid #BDBDBD',
     buttonPadding: '0 15px',
     spacing: {
-        main:"57,5px",
+        main:"100px",
     },
     typography: { // html font = 16px
         body1: {
