@@ -342,7 +342,7 @@ export const Card = ({G,ctx}) => {
                 {/*</Box>*/}
             </Box>
             <Box display={"flex"} justifyContent={"space-between"} className={"container1"}>
-                <Box width={"1190px"}  display={"flex"} flexWrap={"wrap"}  justifyContent={"space-between"} >
+                <Box width={"1020px"}  display={"flex"} flexWrap={"wrap"}  justifyContent={"space-between"} >
 
                     <PlayerHand G={G} ctx={ctx} ID={0}/>
 
