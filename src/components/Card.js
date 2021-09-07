@@ -398,7 +398,7 @@ export const Card = ({G,ctx}) => {
 
 
 
-            <Box display={"flex"} justifyContent={"space-between"} className={"container1"} mt={"420px"}>
+            <Box display={"flex"} justifyContent={"space-between"} className={"container1"} mt={"360px"}>
                 {/*<Box className={"dropzone"}>*/}
                     {/*<GridDropZone*/}
 
