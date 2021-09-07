@@ -12,9 +12,9 @@
 }
 
 .column {
-    height: 118px;
+    height: 120px;
     /*min-height: 90px;*/
-    width: 118px;
+    width: 120px;
     /*margin: 10px;*/
     border-radius: 10px;
     /*box-shadow: 1px 1px 3px rgba(0,0,0,0.5);*/
@@ -24,6 +24,9 @@
     /*margin-top: 2px;*/
     /*justify-content: center;*/
     flex-wrap: wrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /*.do-it-column {*/
