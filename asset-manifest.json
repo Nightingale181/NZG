@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/NZG/static/css/main.8ee28aea.chunk.css",
-    "main.js": "/NZG/static/js/main.416160ff.chunk.js",
-    "main.js.map": "/NZG/static/js/main.416160ff.chunk.js.map",
+    "main.css": "/NZG/static/css/main.a82a5360.chunk.css",
+    "main.js": "/NZG/static/js/main.945ad42b.chunk.js",
+    "main.js.map": "/NZG/static/js/main.945ad42b.chunk.js.map",
     "runtime-main.js": "/NZG/static/js/runtime-main.7f52cad5.js",
     "runtime-main.js.map": "/NZG/static/js/runtime-main.7f52cad5.js.map",
     "static/css/2.71bdbe2f.chunk.css": "/NZG/static/css/2.71bdbe2f.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.217bd780.chunk.js.map": "/NZG/static/js/3.217bd780.chunk.js.map",
     "index.html": "/NZG/index.html",
     "static/css/2.71bdbe2f.chunk.css.map": "/NZG/static/css/2.71bdbe2f.chunk.css.map",
-    "static/css/main.8ee28aea.chunk.css.map": "/NZG/static/css/main.8ee28aea.chunk.css.map",
+    "static/css/main.a82a5360.chunk.css.map": "/NZG/static/css/main.a82a5360.chunk.css.map",
     "static/js/2.e06f81b2.chunk.js.LICENSE.txt": "/NZG/static/js/2.e06f81b2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7f52cad5.js",
     "static/css/2.71bdbe2f.chunk.css",
     "static/js/2.e06f81b2.chunk.js",
-    "static/css/main.8ee28aea.chunk.css",
-    "static/js/main.416160ff.chunk.js"
+    "static/css/main.a82a5360.chunk.css",
+    "static/js/main.945ad42b.chunk.js"
   ]
 }
