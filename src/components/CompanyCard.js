@@ -18,9 +18,9 @@ const useStyles =  makeStyles(theme => (
     {
     mainSection:   {
         // display: "flex",
-        width:  "200px",
-        height: "200px" ,
-        borderRadius:"15px",
+        width:  "120px",
+        height: "120px" ,
+        borderRadius:"10px",
         backgroundColor:"white",
         border:"black",
     },

@@ -15,10 +15,10 @@ import CarbonValue from "./CarbonValue";
 // const image = "../img/company/14/background-1.png"
 const useStyles =  makeStyles(theme => ({
     backCarbon: pic =>({
-        width:400,
-        height:400,
+        width:240,
+        height:240,
         backgroundColor:"white",
-        borderRadius:38,
+        borderRadius:20,
         backgroundPosition: 'center',
         backgroundSize: '90%',
         backgroundRepeat: 'no-repeat',
@@ -31,10 +31,10 @@ const useStyles =  makeStyles(theme => ({
         border: '0.5px solid #a49f9f',
     }),
     frontCarbon:{
-        width:400,
-        height:400,
+        width:240,
+        height:240,
         backgroundColor:"white",
-        borderRadius:38,
+        borderRadius:20,
         backgroundPosition: 'center',
         backgroundSize: '100%',
         backgroundRepeat: 'no-repeat',
@@ -56,7 +56,7 @@ const CarbonEventCard = () => {
     const classes = useStyles(carbonDeck);
 
     return (
-        <Box display={"flex"} justifyContent={"space-between"} width={"800px"} height={"400px"}  marginTop={"-200px"}   >
+        <Box display={"flex"} justifyContent={"space-between"} width={"480px"} height={"240px"}  marginTop={"-120px"}   >
             <Box display={"inline-block"} onClick={()=>{
                 setEvent(event + 1)
             }}

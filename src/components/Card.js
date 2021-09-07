@@ -287,8 +287,8 @@ export const Card = ({G,ctx}) => {
     return (
         // <GridContextProvider onChange={onChangeCompany}>
 <>
-            <Box display={"flex"} justifyContent={"space-between"} width={"3300px"} >
-                <Box display={"flex"} width={"3300px"}>
+            <Box display={"flex"} justifyContent={"space-between"} width={"1980px"} >
+                <Box display={"flex"} width={"1980px"}>
                     <NamePlate/>
                     <TeamCard />
                     <TeamCard />
@@ -342,7 +342,7 @@ export const Card = ({G,ctx}) => {
                 {/*</Box>*/}
             </Box>
             <Box display={"flex"} justifyContent={"space-between"} className={"container1"}>
-                <Box width={"1020px"}  display={"flex"} flexWrap={"wrap"}  justifyContent={"space-between"} >
+                <Box width={"620px"}  display={"flex"} flexWrap={"wrap"}  justifyContent={"space-between"} >
 
                     <PlayerHand G={G} ctx={ctx} ID={0}/>
 
@@ -351,7 +351,7 @@ export const Card = ({G,ctx}) => {
                 </Box>
                 <CarbonEventCard />
 
-                <Box width={"1034px"}   >
+                <Box width={"620px"}   >
                     <PlayerHand G={G} ctx={ctx} ID={1}/>
 
                 </Box>
@@ -397,7 +397,7 @@ export const Card = ({G,ctx}) => {
 
 
 
-            <Box display={"flex"} justifyContent={"space-between"} className={"container1"} mt={"600px"}>
+            <Box display={"flex"} justifyContent={"space-between"} className={"container1"} mt={"420px"}>
                 {/*<Box className={"dropzone"}>*/}
                     {/*<GridDropZone*/}
 
@@ -416,11 +416,11 @@ export const Card = ({G,ctx}) => {
                     {/*</GridDropZone>*/}
                 {/*</Box>*/}
 
-                <Box width={"1034px"}   >
+                <Box width={"620px"}   >
                     <PlayerHand G={G} ctx={ctx} ID={2}  />
                 </Box>
 
-                <Box width={"1034px"}   >
+                <Box width={"620px"}   >
                     <PlayerHand G={G} ctx={ctx} ID={3}/>
                 </Box>
                 {/*<GridDropZone*/}
@@ -437,8 +437,8 @@ export const Card = ({G,ctx}) => {
                 {/*    ))}*/}
                 {/*</GridDropZone>*/}
             </Box>
-    <Box display={"flex"} justifyContent={"space-between"} width={"3300px"} >
-        <Box display={"flex"} width={"3300px"}>
+    <Box display={"flex"} justifyContent={"space-between"} width={"1980px"} mt={"2px"} >
+        <Box display={"flex"} width={"1980px"}>
             <NamePlate/>
             <TeamCard />
             <TeamCard />
