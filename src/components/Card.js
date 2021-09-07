@@ -287,7 +287,8 @@ export const Card = ({G,ctx}) => {
     return (
         // <GridContextProvider onChange={onChangeCompany}>
 <>
-            <Box display={"flex"} justifyContent={"space-between"} width={"1980px"} >
+    <Box paddingLeft={"60px" } paddingTop={"60px"}>
+            <Box display={"flex"} justifyContent={"space-between"} width={"1980px"}  >
                 <Box display={"flex"} width={"1980px"}>
                     <NamePlate/>
                     <TeamCard />
@@ -437,7 +438,7 @@ export const Card = ({G,ctx}) => {
                 {/*    ))}*/}
                 {/*</GridDropZone>*/}
             </Box>
-    <Box display={"flex"} justifyContent={"space-between"} width={"1980px"} mt={"2px"} >
+    <Box display={"flex"} justifyContent={"space-between"} width={"1980px"}  >
         <Box display={"flex"} width={"1980px"}>
             <NamePlate/>
             <TeamCard />
@@ -531,6 +532,7 @@ export const Card = ({G,ctx}) => {
             {/*<Box  position={"absolute"} marginTop={"-208px"} borderRadius={20} width={180} height={90} className={classes.bid} marginLeft={"45%"}>*/}
             {/*    <Typography className={classes.auction}>Auction</Typography>*/}
             {/*</Box>*/}
+    </Box>
 </>
         // </GridContextProvider>
     );

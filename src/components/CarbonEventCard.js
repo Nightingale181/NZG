@@ -15,10 +15,10 @@ import CarbonValue from "./CarbonValue";
 // const image = "../img/company/14/background-1.png"
 const useStyles =  makeStyles(theme => ({
     backCarbon: pic =>({
-        width:240,
-        height:240,
+        width:238,
+        height:238,
         backgroundColor:"white",
-        borderRadius:20,
+        borderRadius:10,
         backgroundPosition: 'center',
         backgroundSize: '90%',
         backgroundRepeat: 'no-repeat',
@@ -26,23 +26,24 @@ const useStyles =  makeStyles(theme => ({
         // ${process.env.PUBLIC_URL + '/img/company/cc12.png'}/
         // position:"absolute",
         alignContent:"center",
-        margin:"0 auto",
+        // margin:"0 auto",
         zIndex:0,
-        border: '0.5px solid #a49f9f',
+        border: '1px solid #a49f9f',
     }),
     frontCarbon:{
-        width:240,
-        height:240,
+        width:238,
+        height:238,
         backgroundColor:"white",
-        borderRadius:20,
+        borderRadius:10,
         backgroundPosition: 'center',
-        backgroundSize: '100%',
+        backgroundSize: '102%',
         backgroundRepeat: 'no-repeat',
         backgroundImage: `url(${process.env.PUBLIC_URL + "/img/ce1test.png"})`,
         // position:"absolute",
         alignContent:"center",
         margin:"0 auto",
         zIndex:0,
+        border: '1px solid #a49f9f',
         // border: '0.5px solid #a49f9f',
     },
 }))
@@ -56,7 +57,7 @@ const CarbonEventCard = () => {
     const classes = useStyles(carbonDeck);
 
     return (
-        <Box display={"flex"} justifyContent={"space-between"} width={"480px"} height={"240px"}  marginTop={"-120px"}   >
+        <Box display={"flex"} justifyContent={"space-between"} width={"480px"} height={"240px"}  marginTop={"-120px"}  marginLeft={"-80px"}  >
             <Box display={"inline-block"} onClick={()=>{
                 setEvent(event + 1)
             }}

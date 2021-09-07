@@ -36,11 +36,18 @@ const useStyles = makeStyles((theme) => ({
         zIndex:2,
     },
     background:{
-        backgroundColor:"#cbcaca",
+        // backgroundColor:"#cbcaca",
         height:"1200px",
         width:"1980px",
         margin:90,
-        padding:"90px",
+        // padding:"90px",
+        backgroundImage:`url(${process.env.PUBLIC_URL + '/img/testsvg3.svg'})`,
+        backgroundPosition: 'center',
+        backgroundSize: '100%',
+        backgroundRepeat: 'no-repeat',
+
+        display: 'block',
+
     },
     auction:{
         textAlign:"center",
