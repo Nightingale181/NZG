@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
     width: "120px",
         height: "120px",
     borderRadius: "10px",
-        border: "1px solid #a49f9f",
+        // border: "1px solid #a49f9f",
         backgroundColor:"white",
         backgroundPosition: 'center',
         backgroundSize: '100%',
