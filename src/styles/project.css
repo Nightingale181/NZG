@@ -4,6 +4,9 @@
     touch-action: none;
     width: 1880px;
     height:240px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 
 
 }

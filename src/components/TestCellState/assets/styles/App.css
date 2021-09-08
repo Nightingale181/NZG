@@ -7,8 +7,12 @@
     /*width: 472px;*/
     /*height: 233px;*/
     display: flex;
+    margin-top: -2px;
     flex-wrap: wrap;
     /*justify-content: space-around;*/
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .column {

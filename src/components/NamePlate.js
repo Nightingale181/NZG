@@ -14,8 +14,8 @@ import {
 const useStyles = makeStyles(theme => ({
     mainSection: {
         // display: "flex",
-    width: "118px",
-        height: "118px",
+    width: "120px",
+        height: "120px",
     borderRadius: "10px",
         border: "1px solid #a49f9f",
         backgroundColor:"white",

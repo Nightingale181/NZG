@@ -287,9 +287,9 @@ export const Card = ({G,ctx}) => {
     return (
         // <GridContextProvider onChange={onChangeCompany}>
 <>
-    <Box paddingLeft={"60px" } paddingTop={"60px"}>
+    <Box paddingLeft={"60px" } paddingTop={"60px"} >
             <Box display={"flex"} justifyContent={"space-between"} width={"1980px"}  >
-                <Box display={"flex"} width={"1980px"}>
+                <Box display={"flex"} width={"300px"}>
                     <NamePlate/>
                     <TeamCard />
                     <TeamCard />

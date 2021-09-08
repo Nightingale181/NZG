@@ -11,7 +11,7 @@ export const companyDeck = [
         actualValue: 2,
         actualCarbon: 2,
         companyBank: 0,
-        svgmain:'/img/company/cc12.png',
+        svgmain:process.env.PUBLIC_URL + '/img/Steaks.svg',
     },
     {
         id: 2,
@@ -25,7 +25,7 @@ export const companyDeck = [
         actualValue: 1,
         actualCarbon: 1,
         companyBank: 0,
-        svgmain:"../img/company/cc12.png",
+        svgmain:process.env.PUBLIC_URL + '/img/Steaks.svg',
     },
     {
         id: 3,
@@ -39,7 +39,7 @@ export const companyDeck = [
         actualValue: 3,
         actualCarbon: 1,
         companyBank: 0,
-        svgmain:"../img/company/cc12.png",    },
+        svgmain:process.env.PUBLIC_URL + '/img/Steaks.svg',    },
     {
         id: 4,
         order:4,
@@ -52,7 +52,7 @@ export const companyDeck = [
         actualValue: 4,
         actualCarbon: 2,
         companyBank: 0,
-        svgmain:"../img/company/cc12.png",    },
+        svgmain:process.env.PUBLIC_URL + '/img/Steaks.svg',    },
     {
         id: 5,
         order:5,
@@ -65,7 +65,7 @@ export const companyDeck = [
         actualValue: 4,
         actualCarbon: 2,
         companyBank: 0,
-        svgmain:"../img/company/cc12.png",    },
+        svgmain:process.env.PUBLIC_URL + '/img/Steaks.svg',    },
     {
         id: 6,
         order:6,
@@ -78,7 +78,7 @@ export const companyDeck = [
         actualValue: 2,
         actualCarbon: 1,
         companyBank: 0,
-        svgmain:"../img/company/cc12.png",    },
+        svgmain:process.env.PUBLIC_URL + '/img/Steaks.svg',    },
     {
         id: 7,
         order:7,
@@ -91,7 +91,7 @@ export const companyDeck = [
         actualValue: 4,
         actualCarbon: 2,
         companyBank: 0,
-        svgmain:"../img/company/cc12.png",    },
+        svgmain:process.env.PUBLIC_URL + '/img/Steaks.svg',    },
     {
         id: 8,
         order:8,
@@ -104,7 +104,7 @@ export const companyDeck = [
         actualValue: 4,
         actualCarbon: 1,
         companyBank: 0,
-        svgmain:"../img/company/cc12.png",    },
+        svgmain:process.env.PUBLIC_URL + '/img/Steaks.svg',    },
     {
         id: 9,
         order:9,
@@ -117,7 +117,7 @@ export const companyDeck = [
         actualValue: 3,
         actualCarbon: 2,
         companyBank: 0,
-        svgmain:"../img/company/cc12.png",    },
+        svgmain:process.env.PUBLIC_URL + '/img/Steaks.svg',    },
     {
         id: 10,
         order:10,
@@ -130,7 +130,7 @@ export const companyDeck = [
         actualValue: 4,
         actualCarbon: 3,
         companyBank: 0,
-        svgmain:"../img/company/cc12.png",    },
+        svgmain:process.env.PUBLIC_URL + '/img/Steaks.svg',    },
     {
         id: 11,
         order:11,
@@ -143,7 +143,7 @@ export const companyDeck = [
         actualValue: 5,
         actualCarbon: 3,
         companyBank: 0,
-        svgmain:"../img/company/cc12.png",    },
+        svgmain:process.env.PUBLIC_URL + '/img/Steaks.svg',    },
     {
         id: 12,
         order:12,
@@ -156,7 +156,7 @@ export const companyDeck = [
         actualValue: 3,
         actualCarbon: 2,
         companyBank: 0,
-        svgmain:"../img/company/cc12.png",    },
+        svgmain:process.env.PUBLIC_URL + '/img/Steaks.svg',    },
     {
         id: 13,
         order:13,
@@ -169,7 +169,7 @@ export const companyDeck = [
         actualValue: 3,
         actualCarbon: 1,
         companyBank: 0,
-        svgmain:"../img/company/cc12.png",    },
+        svgmain:process.env.PUBLIC_URL + '/img/Steaks.svg',    },
     {
         id: 14,
         order:14,
@@ -182,7 +182,7 @@ export const companyDeck = [
         actualValue: 6,
         actualCarbon: 3,
         companyBank: 0,
-        svgmain:"../img/company/cc12.png",    },
+        svgmain:process.env.PUBLIC_URL + '/img/Steaks.svg',    },
     {
         id: 15,
         order:15,
@@ -195,7 +195,7 @@ export const companyDeck = [
         actualValue: 2,
         actualCarbon: 1,
         companyBank: 0,
-        svgmain:"../img/company/cc12.png",    },
+        svgmain:process.env.PUBLIC_URL + '/img/Steaks.svg',    },
     {
         id: 16,
         order:16,
@@ -208,7 +208,7 @@ export const companyDeck = [
         actualValue: 3,
         actualCarbon: 2,
         companyBank: 0,
-        svgmain:"../img/company/cc12.png",    },
+        svgmain:process.env.PUBLIC_URL + '/img/Steaks.svg',    },
     {
         id: 17,
         order:18,
@@ -222,7 +222,7 @@ export const companyDeck = [
         actualValue: 3,
         actualCarbon: 0,
         companyBank: 0,
-        svgmain:"../img/company/cc12.png",    },
+        svgmain:process.env.PUBLIC_URL + '/img/Steaks.svg',    },
     {
         id: 18,
         order:18,
@@ -235,7 +235,7 @@ export const companyDeck = [
         actualValue: 5,
         actualCarbon: 1,
         companyBank: 0,
-        svgmain:"../img/company/cc12.png",    },
+        svgmain:process.env.PUBLIC_URL + '/img/Steaks.svg',    },
 
 ];
 
