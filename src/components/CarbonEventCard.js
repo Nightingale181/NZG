@@ -22,7 +22,7 @@ const useStyles =  makeStyles(theme => ({
         backgroundPosition: 'center',
         backgroundSize: '100%',
         backgroundRepeat: 'no-repeat',
-        backgroundImage: `url(${process.env.PUBLIC_URL + "/img/testsvg2.svg"})`,
+        backgroundImage: `url(${process.env.PUBLIC_URL + "/img/testsvg5.svg"})`,
         // ${process.env.PUBLIC_URL + '/img/company/cc12.png'}/
         // position:"absolute",
         alignContent:"center",
@@ -39,7 +39,7 @@ const useStyles =  makeStyles(theme => ({
         backgroundPosition: 'center',
         backgroundSize: '100%',
         backgroundRepeat: 'no-repeat',
-        backgroundImage: `url(${process.env.PUBLIC_URL + "/img/testsvg2.svg"})`,
+        backgroundImage: `url(${process.env.PUBLIC_URL + "/img/testsvg5.svg"})`,
         // position:"absolute",
         alignContent:"center",
         margin:"0 auto",
