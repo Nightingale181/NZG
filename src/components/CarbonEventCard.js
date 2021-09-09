@@ -18,7 +18,7 @@ const useStyles =  makeStyles(theme => ({
         width:240,
         height:240,
         backgroundColor:"white",
-        borderRadius:15,
+        borderRadius:7,
         backgroundPosition: 'center',
         backgroundSize: '100%',
         backgroundRepeat: 'no-repeat',
@@ -35,7 +35,7 @@ const useStyles =  makeStyles(theme => ({
         width:240,
         height:240,
         backgroundColor:"white",
-        borderRadius:16,
+        borderRadius:7,
         backgroundPosition: 'center',
         backgroundSize: '100%',
         backgroundRepeat: 'no-repeat',
@@ -58,7 +58,7 @@ const CarbonEventCard = () => {
     const classes = useStyles(carbonDeck);
 
     return (
-        <Box display={"flex"} justifyContent={"space-between"} width={"480px"} height={"240px"}  marginTop={"-120px"}  marginLeft={"-80px"}  >
+        <Box display={"flex"} justifyContent={"space-between"} width={"480px"} height={"240px"}  marginTop={"-120px"}  marginLeft={"-20px"}  >
             <Box display={"inline-block"}  onClick={()=>{
                 setEvent(event + 1)
             }}
