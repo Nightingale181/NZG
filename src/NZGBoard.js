@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
         width:"1980px",
         margin:90,
         // padding:"90px",
-        backgroundImage:`url(${process.env.PUBLIC_URL + '/img/testsvg3.svg'})`,
+        backgroundImage:`url(${process.env.PUBLIC_URL + '/img/svgtestbg.svg'})`,
         backgroundPosition: 'center',
         backgroundSize: '100%',
         backgroundRepeat: 'no-repeat',
