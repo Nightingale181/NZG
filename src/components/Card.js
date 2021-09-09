@@ -289,11 +289,17 @@ export const Card = ({G,ctx}) => {
 <>
     <Box paddingLeft={"60px" } paddingTop={"60px"} >
             <Box display={"flex"} justifyContent={"space-between"} width={"1980px"}  >
-                <Box display={"flex"} width={"300px"}>
+                <Box display={"flex"} width={"600px"}>
                     <NamePlate/>
                     <TeamCard />
                     <TeamCard />
                     <TeamCard />
+                    <TeamCard />
+                    <TeamCard />
+                    <TeamCard />
+                    <TeamCard />
+                    <TeamCard />
+
                 </Box>
                 <Box display={"flex"}>
                     {/*<TeamCard />*/}
