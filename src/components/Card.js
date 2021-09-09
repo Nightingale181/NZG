@@ -359,9 +359,7 @@ export const Card = ({G,ctx}) => {
 
                 <Box display={"flex"}>
                     <CarbonEventCard />
-                    <Box marginTop={"-60px"}>
                         <TeamCard />
-                    </Box>
                 </Box>
 
 
