@@ -1,4 +1,3 @@
-
 import React, {useState} from "react";
 import {
     GridContextProvider,
@@ -184,7 +183,7 @@ import {PlayerHand} from "./TestCellState/PlayerHand";
 // }));
 
 
-export const Card = ({G,ctx}) => {
+export const Card = ({G, ctx}) => {
     // const playerID = ["1","2","3","4"]
     console.log(G.players[0].handCompanyDeck);
     // const classes = useStyles();
@@ -200,8 +199,6 @@ export const Card = ({G,ctx}) => {
     //        fourthTeam: G.players[3].handTeamDeck,
     //        mainTeam:G.teamDeck,
     // });
-
-
 
 
     //  const CompanyCard = ({card,key,G}) => {
@@ -256,8 +253,6 @@ export const Card = ({G,ctx}) => {
     // };
 
 
-
-
     // function onChangeCompany(sourceId, sourceIndex, targetIndex, targetId) {
     //     if (targetId) {
     //         const result = move(
@@ -286,155 +281,152 @@ export const Card = ({G,ctx}) => {
 
     return (
         // <GridContextProvider onChange={onChangeCompany}>
-<>
-    <Box paddingLeft={"60px" } paddingTop={"60px"} >
-            <Box display={"flex"} justifyContent={"space-between"} width={"1980px"}  >
-                <Box display={"flex"} width={"600px"}>
-                    <NamePlate/>
-                    <TeamCard />
-                    <TeamCard />
-                    <TeamCard />
-                    <TeamCard />
-                    <TeamCard />
-                    <TeamCard />
-                    <TeamCard />
-                    <TeamCard />
+        <>
+            <Box paddingLeft={"60px"} paddingTop={"60px"}>
+                <Box display={"flex"} justifyContent={"space-between"} width={"1980px"}>
+                    <Box display={"flex"} width={"600px"}>
+                        <NamePlate/>
+                        <TeamCard/>
+                        <TeamCard/>
+                        <TeamCard/>
+                        <TeamCard/>
+                        <TeamCard/>
+                        <TeamCard/>
+                        <TeamCard/>
+                        <TeamCard/>
 
-                </Box>
-                <Box display={"flex"}>
-                    {/*<TeamCard />*/}
-                    {/*/!*<TeamCard />*!/*/}
-                    {/*<TeamCard />*/}
+                    </Box>
+                    <Box display={"flex"}>
+                        {/*<TeamCard />*/}
+                        {/*/!*<TeamCard />*!/*/}
+                        {/*<TeamCard />*/}
+                        {/*<NamePlate/>*/}
+
+                    </Box>
+
+                    {/*<NamePlate/>*/}
                     {/*<NamePlate/>*/}
 
+                    {/*<Box display={"flex"} justifyContent={"space-between"} width={185}>*/}
+                    {/*    <NamePlate G={G} playerId={0} />*/}
+
+                    {/*    <GridDropZone*/}
+                    {/*        className={"handTeam"}*/}
+                    {/*        id="firstTeam"*/}
+                    {/*        boxesPerRow={2}*/}
+                    {/*        rowHeight={95}*/}
+                    {/*    >*/}
+                    {/*        {items.firstTeam.map(item => (*/}
+                    {/*            <GridItem key={item.id}>*/}
+                    {/*                <TeamCard G={G} card = {item}/>*/}
+                    {/*            </GridItem>*/}
+                    {/*        ))}*/}
+                    {/*    </GridDropZone>*/}
+                    {/*</Box>*/}
+                    {/*<Box display={"flex"} justifyContent={"space-between"} width={185}>*/}
+
+
+                    {/*        <GridDropZone*/}
+                    {/*            className={"handTeam"}*/}
+                    {/*            id="secondTeam"*/}
+                    {/*            boxesPerRow={3}*/}
+                    {/*            rowHeight={95}*/}
+                    {/*        >*/}
+                    {/*            {items.secondTeam.map(item => (*/}
+                    {/*                <GridItem key={item.id}>*/}
+                    {/*                    <TeamCard G={G} card = {item}/>*/}
+                    {/*                </GridItem>*/}
+                    {/*            ))}*/}
+                    {/*        </GridDropZone>*/}
+
+
+                    {/*    <NamePlate G={G} playerId={1} />*/}
+                    {/*</Box>*/}
                 </Box>
+                <Box className={"container1"}>
+                    {/*<Box width={"620px"}  display={"flex"} flexWrap={"wrap"}  justifyContent={"space-between"} >*/}
 
-                {/*<NamePlate/>*/}
-                {/*<NamePlate/>*/}
-
-                {/*<Box display={"flex"} justifyContent={"space-between"} width={185}>*/}
-                {/*    <NamePlate G={G} playerId={0} />*/}
-
-                {/*    <GridDropZone*/}
-                {/*        className={"handTeam"}*/}
-                {/*        id="firstTeam"*/}
-                {/*        boxesPerRow={2}*/}
-                {/*        rowHeight={95}*/}
-                {/*    >*/}
-                {/*        {items.firstTeam.map(item => (*/}
-                {/*            <GridItem key={item.id}>*/}
-                {/*                <TeamCard G={G} card = {item}/>*/}
-                {/*            </GridItem>*/}
-                {/*        ))}*/}
-                {/*    </GridDropZone>*/}
-                {/*</Box>*/}
-                {/*<Box display={"flex"} justifyContent={"space-between"} width={185}>*/}
+                    {/*    <PlayerHand G={G} ctx={ctx} ID={0}/>*/}
 
 
-                {/*        <GridDropZone*/}
-                {/*            className={"handTeam"}*/}
-                {/*            id="secondTeam"*/}
-                {/*            boxesPerRow={3}*/}
-                {/*            rowHeight={95}*/}
-                {/*        >*/}
-                {/*            {items.secondTeam.map(item => (*/}
-                {/*                <GridItem key={item.id}>*/}
-                {/*                    <TeamCard G={G} card = {item}/>*/}
-                {/*                </GridItem>*/}
-                {/*            ))}*/}
-                {/*        </GridDropZone>*/}
+                    {/*</Box>*/}
+
+                    {/*<Box display={"flex"}>*/}
+                    {/*    <CarbonEventCard />*/}
+                    {/*        <TeamCard />*/}
+                    {/*</Box>*/}
 
 
-                {/*    <NamePlate G={G} playerId={1} />*/}
-                {/*</Box>*/}
-            </Box>
-            <Box display={"flex"} justifyContent={"space-between"} className={"container1"}>
-                <Box width={"620px"}  display={"flex"} flexWrap={"wrap"}  justifyContent={"space-between"} >
+                    {/*<Box width={"620px"}   >*/}
+                    {/*    <PlayerHand G={G} ctx={ctx} ID={1}/>*/}
 
-                    <PlayerHand G={G} ctx={ctx} ID={0}/>
+                    {/*</Box>*/}
 
+                    <PlayerHand ID={0} ctx={ctx} G={G}/>
 
+                    {/*<Box  >*/}
+                    {/*    <CarbonEventCard />*/}
 
-                </Box>
-
-                <Box display={"flex"}>
-                    <CarbonEventCard />
-                        <TeamCard />
-                </Box>
+                    {/*</Box>*/}
 
 
-                <Box width={"620px"}   >
-                    <PlayerHand G={G} ctx={ctx} ID={1}/>
-
-                </Box>
-
-                {/*<Box  >*/}
-                {/*    <CarbonEventCard />*/}
-
-                {/*</Box>*/}
-
-
-                {/*<GridDropZone*/}
-
-                {/*    className={"dropzone"}*/}
-                {/*    id="second"*/}
-                {/*    boxesPerRow={2}*/}
-                {/*    rowHeight={95}*/}
-                {/*>*/}
-                {/*    {items.second.map(item => (*/}
-                {/*        <GridItem key={item.id}>*/}
-                {/*                    <CompanyCard card={item} key={item.id}  G={G} />*/}
-                {/*        </GridItem>*/}
-                {/*    ))}*/}
-                {/*</GridDropZone>*/}
-            </Box>
-
-
-            {/*<GridDropZone*/}
-            {/*    className={"mainTeamDeck"}*/}
-            {/*    id = "first"*/}
-            {/*    boxesPerRow={9}*/}
-            {/*    rowHeight={95}*/}
-            {/*>*/}
-            {/*    {items.main.map(item => (*/}
-            {/*            <GridItem key={item.id}>*/}
-            {/*                <CompanyCard card={item} key={item.id}  G={G}/>*/}
-            {/*            </GridItem>*/}
-            {/*        ))}*/}
-
-            {/*</GridDropZone>*/}
-
-
-
-
-
-
-            <Box display={"flex"} justifyContent={"space-between"} className={"container1"} mt={"360px"}>
-                {/*<Box className={"dropzone"}>*/}
                     {/*<GridDropZone*/}
 
-
-                    {/*    id="third"*/}
+                    {/*    className={"dropzone"}*/}
+                    {/*    id="second"*/}
                     {/*    boxesPerRow={2}*/}
                     {/*    rowHeight={95}*/}
                     {/*>*/}
-                    {/*    {items.third.map(item => (*/}
+                    {/*    {items.second.map(item => (*/}
                     {/*        <GridItem key={item.id}>*/}
-
-                    {/*            <CompanyCard card={item} key={item.id}  G={G}/>*/}
-
+                    {/*                    <CompanyCard card={item} key={item.id}  G={G} />*/}
                     {/*        </GridItem>*/}
                     {/*    ))}*/}
                     {/*</GridDropZone>*/}
+                </Box>
+
+
+                {/*<GridDropZone*/}
+                {/*    className={"mainTeamDeck"}*/}
+                {/*    id = "first"*/}
+                {/*    boxesPerRow={9}*/}
+                {/*    rowHeight={95}*/}
+                {/*>*/}
+                {/*    {items.main.map(item => (*/}
+                {/*            <GridItem key={item.id}>*/}
+                {/*                <CompanyCard card={item} key={item.id}  G={G}/>*/}
+                {/*            </GridItem>*/}
+                {/*        ))}*/}
+
+                {/*</GridDropZone>*/}
+
+
+                {/*<Box display={"flex"} justifyContent={"space-between"} className={"container1"} mt={"360px"}>*/}
+                {/*<Box className={"dropzone"}>*/}
+                {/*<GridDropZone*/}
+
+
+                {/*    id="third"*/}
+                {/*    boxesPerRow={2}*/}
+                {/*    rowHeight={95}*/}
+                {/*>*/}
+                {/*    {items.third.map(item => (*/}
+                {/*        <GridItem key={item.id}>*/}
+
+                {/*            <CompanyCard card={item} key={item.id}  G={G}/>*/}
+
+                {/*        </GridItem>*/}
+                {/*    ))}*/}
+                {/*</GridDropZone>*/}
                 {/*</Box>*/}
 
-                <Box width={"620px"}   >
-                    <PlayerHand G={G} ctx={ctx} ID={2}  />
-                </Box>
+                {/*<Box width={"620px"}   >*/}
+                {/*    <PlayerHand G={G} ctx={ctx} ID={2}  />*/}
+                {/*</Box>*/}
 
-                <Box width={"620px"}   >
-                    <PlayerHand G={G} ctx={ctx} ID={3}/>
-                </Box>
+                {/*<Box width={"620px"}   >*/}
+                {/*    <PlayerHand G={G} ctx={ctx} ID={3}/>*/}
+                {/*</Box>*/}
                 {/*<GridDropZone*/}
 
                 {/*    className={"dropzone"}*/}
@@ -448,103 +440,103 @@ export const Card = ({G,ctx}) => {
                 {/*        </GridItem>*/}
                 {/*    ))}*/}
                 {/*</GridDropZone>*/}
+                {/*</Box>*/}
+                <Box display={"flex"} justifyContent={"space-between"} width={"1980px"}>
+                    {/*<Box display={"flex"} width={"1980px"}>*/}
+                    {/*    <NamePlate/>*/}
+                    {/*    <TeamCard/>*/}
+                    {/*    <TeamCard/>*/}
+                    {/*    <TeamCard/>*/}
+                    {/*</Box>*/}
+                    <Box display={"flex"}>
+                        {/*<TeamCard />*/}
+                        {/*/!*<TeamCard />*!/*/}
+                        {/*<TeamCard />*/}
+                        {/*<NamePlate/>*/}
+
+                    </Box>
+
+                    {/*<NamePlate/>*/}
+                    {/*<NamePlate/>*/}
+
+                    {/*<Box display={"flex"} justifyContent={"space-between"} width={185}>*/}
+                    {/*    <NamePlate G={G} playerId={0} />*/}
+
+                    {/*    <GridDropZone*/}
+                    {/*        className={"handTeam"}*/}
+                    {/*        id="firstTeam"*/}
+                    {/*        boxesPerRow={2}*/}
+                    {/*        rowHeight={95}*/}
+                    {/*    >*/}
+                    {/*        {items.firstTeam.map(item => (*/}
+                    {/*            <GridItem key={item.id}>*/}
+                    {/*                <TeamCard G={G} card = {item}/>*/}
+                    {/*            </GridItem>*/}
+                    {/*        ))}*/}
+                    {/*    </GridDropZone>*/}
+                    {/*</Box>*/}
+                    {/*<Box display={"flex"} justifyContent={"space-between"} width={185}>*/}
+
+
+                    {/*        <GridDropZone*/}
+                    {/*            className={"handTeam"}*/}
+                    {/*            id="secondTeam"*/}
+                    {/*            boxesPerRow={3}*/}
+                    {/*            rowHeight={95}*/}
+                    {/*        >*/}
+                    {/*            {items.secondTeam.map(item => (*/}
+                    {/*                <GridItem key={item.id}>*/}
+                    {/*                    <TeamCard G={G} card = {item}/>*/}
+                    {/*                </GridItem>*/}
+                    {/*            ))}*/}
+                    {/*        </GridDropZone>*/}
+
+
+                    {/*    <NamePlate G={G} playerId={1} />*/}
+                    {/*</Box>*/}
+                </Box>
+                {/*<Box marginTop={1} display={"flex"} justifyContent={"space-between"} width={"1525px"}>*/}
+                {/*    <Box display={"flex"} justifyContent={"space-between"} width={185}>*/}
+                {/*        <NamePlate G={G} playerId={2} />*/}
+
+                {/*            <GridDropZone*/}
+                {/*                className={"handTeam"}*/}
+                {/*                id="thirdTeam"*/}
+                {/*                boxesPerRow={3}*/}
+                {/*                rowHeight={95}*/}
+                {/*            >*/}
+                {/*                {items.thirdTeam.map(item => (*/}
+                {/*                    <GridItem key={item.id}>*/}
+                {/*                        <TeamCard G={G} card = {item}/>*/}
+                {/*                    </GridItem>*/}
+                {/*                ))}*/}
+                {/*            </GridDropZone>*/}
+
+                {/*    </Box>*/}
+                {/*    <Box display={"flex"} justifyContent={"space-between"} width={185}>*/}
+
+                {/*            <GridDropZone*/}
+                {/*                className={"handTeam handTeam1"}*/}
+                {/*                id="fourthTeam"*/}
+                {/*                boxesPerRow={3}*/}
+                {/*                rowHeight={95}*/}
+                {/*            >*/}
+                {/*            {items.fourthTeam.map(item => (*/}
+                {/*                <GridItem key={item.id}>*/}
+                {/*                    <TeamCard G={G} card = {item}/>*/}
+                {/*                </GridItem>*/}
+                {/*            ))}*/}
+                {/*            </GridDropZone>*/}
+
+                {/*        <NamePlate G={G} playerId={3} />*/}
+                {/*    </Box>*/}
+                {/*</Box>*/}
+
+                {/*<Box  position={"absolute"} marginTop={"-208px"} borderRadius={20} width={180} height={90} className={classes.bid} marginLeft={"45%"}>*/}
+                {/*    <Typography className={classes.auction}>Auction</Typography>*/}
+                {/*</Box>*/}
             </Box>
-    <Box display={"flex"} justifyContent={"space-between"} width={"1980px"}  >
-        <Box display={"flex"} width={"1980px"}>
-            <NamePlate/>
-            <TeamCard />
-            <TeamCard />
-            <TeamCard />
-        </Box>
-        <Box display={"flex"}>
-            {/*<TeamCard />*/}
-            {/*/!*<TeamCard />*!/*/}
-            {/*<TeamCard />*/}
-            {/*<NamePlate/>*/}
-
-        </Box>
-
-        {/*<NamePlate/>*/}
-        {/*<NamePlate/>*/}
-
-        {/*<Box display={"flex"} justifyContent={"space-between"} width={185}>*/}
-        {/*    <NamePlate G={G} playerId={0} />*/}
-
-        {/*    <GridDropZone*/}
-        {/*        className={"handTeam"}*/}
-        {/*        id="firstTeam"*/}
-        {/*        boxesPerRow={2}*/}
-        {/*        rowHeight={95}*/}
-        {/*    >*/}
-        {/*        {items.firstTeam.map(item => (*/}
-        {/*            <GridItem key={item.id}>*/}
-        {/*                <TeamCard G={G} card = {item}/>*/}
-        {/*            </GridItem>*/}
-        {/*        ))}*/}
-        {/*    </GridDropZone>*/}
-        {/*</Box>*/}
-        {/*<Box display={"flex"} justifyContent={"space-between"} width={185}>*/}
-
-
-        {/*        <GridDropZone*/}
-        {/*            className={"handTeam"}*/}
-        {/*            id="secondTeam"*/}
-        {/*            boxesPerRow={3}*/}
-        {/*            rowHeight={95}*/}
-        {/*        >*/}
-        {/*            {items.secondTeam.map(item => (*/}
-        {/*                <GridItem key={item.id}>*/}
-        {/*                    <TeamCard G={G} card = {item}/>*/}
-        {/*                </GridItem>*/}
-        {/*            ))}*/}
-        {/*        </GridDropZone>*/}
-
-
-        {/*    <NamePlate G={G} playerId={1} />*/}
-        {/*</Box>*/}
-    </Box>
-            {/*<Box marginTop={1} display={"flex"} justifyContent={"space-between"} width={"1525px"}>*/}
-            {/*    <Box display={"flex"} justifyContent={"space-between"} width={185}>*/}
-            {/*        <NamePlate G={G} playerId={2} />*/}
-
-            {/*            <GridDropZone*/}
-            {/*                className={"handTeam"}*/}
-            {/*                id="thirdTeam"*/}
-            {/*                boxesPerRow={3}*/}
-            {/*                rowHeight={95}*/}
-            {/*            >*/}
-            {/*                {items.thirdTeam.map(item => (*/}
-            {/*                    <GridItem key={item.id}>*/}
-            {/*                        <TeamCard G={G} card = {item}/>*/}
-            {/*                    </GridItem>*/}
-            {/*                ))}*/}
-            {/*            </GridDropZone>*/}
-
-            {/*    </Box>*/}
-            {/*    <Box display={"flex"} justifyContent={"space-between"} width={185}>*/}
-
-            {/*            <GridDropZone*/}
-            {/*                className={"handTeam handTeam1"}*/}
-            {/*                id="fourthTeam"*/}
-            {/*                boxesPerRow={3}*/}
-            {/*                rowHeight={95}*/}
-            {/*            >*/}
-            {/*            {items.fourthTeam.map(item => (*/}
-            {/*                <GridItem key={item.id}>*/}
-            {/*                    <TeamCard G={G} card = {item}/>*/}
-            {/*                </GridItem>*/}
-            {/*            ))}*/}
-            {/*            </GridDropZone>*/}
-
-            {/*        <NamePlate G={G} playerId={3} />*/}
-            {/*    </Box>*/}
-            {/*</Box>*/}
-
-            {/*<Box  position={"absolute"} marginTop={"-208px"} borderRadius={20} width={180} height={90} className={classes.bid} marginLeft={"45%"}>*/}
-            {/*    <Typography className={classes.auction}>Auction</Typography>*/}
-            {/*</Box>*/}
-    </Box>
-</>
+        </>
         // </GridContextProvider>
     );
 }
