@@ -26,7 +26,7 @@ const useStyles =  makeStyles(theme => (
     },
 
     backImage: card =>( {
-        backgroundImage:`url(${process.env.PUBLIC_URL + '/img/testsvg2.svg'})`,
+        backgroundImage:`url(${process.env.PUBLIC_URL + '/img/airline.svg'})`,
         backgroundPosition: 'center',
         backgroundSize: '100%',
         backgroundRepeat: 'no-repeat',
