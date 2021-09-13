@@ -420,6 +420,10 @@ export const PlayerHand = ({G, ctx, ID}) => {
                             {returnItemsForCell(a9)}
                         </Cell>
                     </div>
+                    <div className={"eventCard"}>
+                        <CarbonEventCard/>
+                        <TeamCard/>
+                    </div>
                     <div className="container">
                         <Cell title={b0} className='column'>
                             {returnItemsForCell(b0)}

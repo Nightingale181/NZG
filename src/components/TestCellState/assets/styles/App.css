@@ -27,6 +27,12 @@ display: block;
 
 }
 
+.eventCard{
+    display:flex;
+    margin-left: 20px;
+
+}
+
 .lower{
     margin-top: 360px;
 }
