@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/NZG/static/css/main.aeecb58a.chunk.css",
-    "main.js": "/NZG/static/js/main.2d4dda66.chunk.js",
-    "main.js.map": "/NZG/static/js/main.2d4dda66.chunk.js.map",
+    "main.js": "/NZG/static/js/main.2acc5db6.chunk.js",
+    "main.js.map": "/NZG/static/js/main.2acc5db6.chunk.js.map",
     "runtime-main.js": "/NZG/static/js/runtime-main.7f52cad5.js",
     "runtime-main.js.map": "/NZG/static/js/runtime-main.7f52cad5.js.map",
     "static/css/2.71bdbe2f.chunk.css": "/NZG/static/css/2.71bdbe2f.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.71bdbe2f.chunk.css",
     "static/js/2.2ba1094f.chunk.js",
     "static/css/main.aeecb58a.chunk.css",
-    "static/js/main.2d4dda66.chunk.js"
+    "static/js/main.2acc5db6.chunk.js"
   ]
 }
