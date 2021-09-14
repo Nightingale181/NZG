@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => (
             width: '120px',
             display: 'block',
             margin: 'auto',
-            backgroundColor: "white",
+            // backgroundColor: "white",
             // flexDirection:"column",
 
             // marginTop: "2%",
