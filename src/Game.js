@@ -43,7 +43,7 @@ export function getInitialState(ctx) {
         deck: [],
         players: [],
         carbonDeck: [],
-        currentCarbon:[],
+        currentCarbon: [],
         teamDeck: [],
         companyDeck: [],
         temperatureIncrease: 0,
@@ -57,9 +57,9 @@ export function getInitialState(ctx) {
 
     // Add a deck for every player
     // for (let i = 0; i < ctx.numPlayers; i++) {
-        G.companyDeck = G.companyDeck.concat(companyDeck);
-        G.carbonDeck = G.carbonDeck.concat(carbonDeck);
-        G.teamDeck = G.teamDeck.concat(teamDeck);
+    G.companyDeck = G.companyDeck.concat(companyDeck);
+    G.carbonDeck = G.carbonDeck.concat(carbonDeck);
+    G.teamDeck = G.teamDeck.concat(teamDeck);
     // }
 
     console.log(ctx.currentPlayer);
@@ -77,7 +77,7 @@ export function getInitialState(ctx) {
             handTeamDeck: [],
             bank: {
                 coin: 15,
-                coinsCopy:15,
+                coinsCopy: 15,
                 carbonCoins: 0,
                 teamMembers: 0
             },
@@ -88,7 +88,7 @@ export function getInitialState(ctx) {
     G.currentCarbon.push(topCard);
 
     for (let i = 0; i < 4; i++) {
-        for(let k = 0; k < 3; k++){
+        for (let k = 0; k < 3; k++) {
             topCard = G.companyDeck.shift();
             G.players[i].handCompanyDeck.push(topCard);
         }
@@ -97,12 +97,11 @@ export function getInitialState(ctx) {
     }
 
     for (let i = 0; i < 2; i++) {
-        for(let k = 0;k < 4;k++){
-        topCard = G.teamDeck.shift();
-        G.players[k].handTeamDeck.push(topCard);
+        for (let k = 0; k < 4; k++) {
+            topCard = G.teamDeck.shift();
+            G.players[k].handTeamDeck.push(topCard);
+        }
     }
-    }
-
 
 
     // For debugging "game over" state– this sets the deck to only have a single card
@@ -120,8 +119,6 @@ let findIndex;
 export const currentId = [];
 
 export const Game = {
-
-
 
 
     name: "NetZeroGame",
@@ -165,7 +162,7 @@ export const Game = {
                 DiscardTeam: (G, ctx, id) => {
                     topCard = G.players[ctx.currentPlayer].handTeamDeck.find((item) => item.id === id);
                     G.teamDeck.push(topCard);
-                   const findIndex = G.players[ctx.currentPlayer].handTeamDeck.findIndex(i => i.id === id);
+                    const findIndex = G.players[ctx.currentPlayer].handTeamDeck.findIndex(i => i.id === id);
                     if (findIndex > -1) {
                         G.players[ctx.currentPlayer].handTeamDeck.splice(findIndex, 1);
                     }
@@ -180,7 +177,7 @@ export const Game = {
         },
         pickEvent: {
             start: true,
-            next:"counterEvent",
+            next: "counterEvent",
             moves: {
                 DrawCarbonEventCard: (G, ctx) => {
                     topCard = G.carbonDeck.shift();
@@ -218,25 +215,22 @@ export const Game = {
             },
             turn: {moveLimit: 1},
         },
-        companyMarket:{
-            moves:{
-                sellCompany:(G,ctx)=>{
+        companyMarket: {
+            moves: {
+                sellCompany: (G, ctx) => {
 
                 },
-                bidForCompany:(G,ctx)=>{
+                bidForCompany: (G, ctx) => {
 
                 },
-                takeOverCompany:(G,ctx)=>{
+                takeOverCompany: (G, ctx) => {
                     topCard = G.players[ctx.currentPlayer].handTeamDeck.find((item) => item.type === "GEO");
                     G.teamDeck.push(topCard);
 
                 },
             },
-            turn:{moveLimit:2},
+            turn: {moveLimit: 2},
         },
-
-
-
 
 
         // turn: {moveLimit: 2},

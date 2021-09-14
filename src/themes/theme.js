@@ -1,4 +1,4 @@
-import { createMuiTheme } from '@material-ui/core/styles'
+import {createMuiTheme} from '@material-ui/core/styles'
 
 export const theme = createMuiTheme({
     boxShadow: '0px 2px 15px rgba(0, 0, 0, 0.25)',
@@ -6,7 +6,7 @@ export const theme = createMuiTheme({
     border: '1px solid #BDBDBD',
     buttonPadding: '0 15px',
     spacing: {
-        main:"100px",
+        main: "100px",
     },
     typography: { // html font = 16px
         body1: {
@@ -29,8 +29,13 @@ export const theme = createMuiTheme({
         },
         button: {
             fontSize: '1.125rem' // 18px
-        }
+        },
+
+
+
+
     },
+
     palette: {
         primary: {
             main: '#2DACFD',

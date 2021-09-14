@@ -2,12 +2,13 @@ import React, {useEffect, useRef, useState} from 'react';
 import {DndProvider, useDrag, useDrop} from "react-dnd";
 import {HTML5Backend} from "react-dnd-html5-backend";
 import {TouchBackend} from "react-dnd-touch-backend";
-import './assets/styles/App.css';
-import {CELL_NAMES} from "./constants";
-import {tasks} from "./tasks";
+import '../../styles/App.css';
+import {CELL_NAMES} from "./companyCellNames";
+import {cardIds} from "./cardIds";
 import CompanyCard from "../CompanyCard";
 import CarbonEventCard from "../CarbonEventCard";
 import TeamCard from "../TeamCard";
+import {companyDeck} from "../../constants/companyDeck";
 
 
 const MovableItem = ({name, index, currentCellName, moveCardHandler, setItems, G, playerID, item}) => {
@@ -301,9 +302,11 @@ const Cell = ({children, className, title, G, ctx, ID}) => {
 
 export const PlayerHand = ({G, ctx, ID}) => {
     console.log(ID);
-    const [items, setItems] = useState(tasks);
+    const [items, setItems] = useState(cardIds);
 
     const isMobile = window.innerWidth < 600;
+
+    const card = companyDeck[1];
 
     const moveCardHandler = (dragIndex, hoverIndex) => {
 
@@ -335,7 +338,7 @@ export const PlayerHand = ({G, ctx, ID}) => {
                              index={index}
                              moveCardHandler={moveCardHandler}
                              G={G}
-                             item={G.companyDeck[0]}
+                             item={card}
                              playerID={ID}
                 />
             ))
