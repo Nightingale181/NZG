@@ -1,7 +1,10 @@
 import {CELL_NAMES} from "./companyCellNames";
+import {companyDeck} from "../../constants/companyDeck";
 
 // const {oneC,twoC,threeC,fiveC,fourC,sixC} = COLUMN_NAMES;
-export const cardIds = [
+export const cardIds =
+    // companyDeck;
+    [
     {id: 1, name: 'Item 1', cell: CELL_NAMES.a0},
     {id: 2, name: 'Item 2', cell: CELL_NAMES.a1},
     {id: 3, name: 'Item 3', cell: CELL_NAMES.a5},

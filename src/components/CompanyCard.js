@@ -158,21 +158,20 @@ const useStyles = makeStyles(theme => (
             fontSize: "10pt",
 
         },
-        direction1: {},
-        direction2: {
+        directionValue1: {},
+        directionValue2: {
             display: "flex",
             fontSize: 18,
-            paddingTop: "80px",
-            paddingLeft: "80px",
             // backgroundColor:"green",
+
             width: "32px",
             height: "32px",
             alignItems: "center",
             justifyContent: "space-around",
 
         },
-        direction3: {},
-        direction4: {},
+        directionValue3: {},
+        directionValue4: {},
     }))
 
 
@@ -186,26 +185,81 @@ const CompanyCard = ({G, item, key, playerID}) => {
 
     const cardDirectionClass = () => {
 
-        let temporaryClass = [];
+
 
         if (item.direction === 2) {
-            temporaryClass.push(`${classes.direction2} + " " + mainFont  `);
+
+
+            return (
+                <Box display={"flex"} justifyContent={"space-between"} width={"105px"} paddingTop={"80px"} paddingLeft={"7px"} >
+                    <Box className={`${classes.directionValue2} + " " + mainFont greyFont `}>
+                        {
+                            item.actualCarbon
+                        }
+                    </Box>
+                    <Box className={`${classes.directionValue2} + " " + mainFont  `}>
+                        {
+                            item.actualValue
+                        }
+                    </Box>
+                </Box>
+            );
 
         }
         if (item.direction === 1) {
-            temporaryClass.push(`${classes.direction1} + " " + mainFont  `);
+            return (
+                <Box display={"flex"} justifyContent={"space-between"} width={"105px"} paddingTop={"80px"} paddingLeft={"7px"} >
+                    <Box className={`${classes.directionValue2} + " " + mainFont  `}>
+                        {
+                            item.actualValue
+                        }
+                    </Box>
+                    <Box className={`${classes.directionValue2} + " " + mainFont greyFont `}>
+                        {
+                            item.actualCarbon
+                        }
+                    </Box>
+
+                </Box>
+            );
 
         }
         if (item.direction === 3) {
-            temporaryClass.push(`${classes.direction3} + " " + mainFont  `);
 
+            return (
+                <Box display={"flex"} justifyContent={"space-between"} width={"106px"} paddingTop={"6px"} paddingLeft={"7px"} >
+                    <Box className={`${classes.directionValue2} + " " + mainFont greyFont `}>
+                        {
+                            item.actualCarbon
+                        }
+                    </Box>
+                    <Box className={`${classes.directionValue2} + " " + mainFont  `}>
+                        {
+                            item.actualValue
+                        }
+                    </Box>
+                </Box>
+            );
         }
         if (item.direction === 4) {
-            temporaryClass.push(`${classes.direction4} + " " + mainFont  `);
 
+            return (
+                <Box display={"flex"} justifyContent={"space-between"} width={"106px"} paddingTop={"6px"} paddingLeft={"7px"} >
+                    <Box className={`${classes.directionValue2} + " " + mainFont  `}>
+                        {
+                            item.actualValue
+                        }
+                    </Box>
+                    <Box className={`${classes.directionValue2} + " " + mainFont greyFont `}>
+                        {
+                            item.actualCarbon
+                        }
+                    </Box>
+
+                </Box>
+            );
         }
 
-        return temporaryClass[0];
     }
 
 
@@ -232,17 +286,7 @@ const CompanyCard = ({G, item, key, playerID}) => {
                 <Box className={`${classes.backImage}`}>
 
 
-
-
-
-                    <Box className={cardDirectionClass()}>
-
-                        {
-                            item.actualValue
-                        }
-
-                    </Box>
-
+                    {cardDirectionClass()}
 
                     {/*<Box zIndex={1} className={classes.actualValues}>*/}
 

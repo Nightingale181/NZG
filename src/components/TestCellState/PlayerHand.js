@@ -28,7 +28,7 @@ const MovableItem = ({name, index, currentCellName, moveCardHandler, setItems, G
     const ref = useRef(null);
 
     const [, drop] = useDrop({
-        accept: 'Our first type',
+        accept: 'companyCard',
         hover(item: any, monitor) {
             if (!ref.current) {
                 return;
@@ -69,7 +69,7 @@ const MovableItem = ({name, index, currentCellName, moveCardHandler, setItems, G
     });
 
     const [{isDragging}, drag] = useDrag({
-        item: {index, name, currentCellName, type: 'Our first type'},
+        item: {index, name, currentCellName, type: 'companyCard'},
         end: (item, monitor) => {
             const dropResult = monitor.getDropResult();
 
@@ -261,35 +261,16 @@ const MovableItem = ({name, index, currentCellName, moveCardHandler, setItems, G
 
 const Cell = ({children, className, title, G, ctx, ID}) => {
     const [{isOver, canDrop}, drop] = useDrop({
-        accept: 'Our first type',
+        accept: 'companyCard',
         drop: () => ({name: title}),
         collect: (monitor) => ({
             isOver: monitor.isOver(),
             canDrop: monitor.canDrop(),
         }),
-        // Override monitor.canDrop() function
-        // canDrop: (item: any) => {
-        //     const {DO_IT, IN_PROGRESS, AWAITING_REVIEW, DONE} = COLUMN_NAMES;
-        //     const {currentColumnName} = item;
-        //     return (currentColumnName === title) ||
-        //         (currentColumnName === DO_IT && title === IN_PROGRESS) ||
-        //         (currentColumnName === IN_PROGRESS && (title === DO_IT || title === AWAITING_REVIEW)) ||
-        //         (currentColumnName === AWAITING_REVIEW && (title === IN_PROGRESS || title === DONE)) ||
-        //         (currentColumnName === DONE && (title === AWAITING_REVIEW));
-        // },
+
     });
 
-    // const getBackgroundColor = () => {
-    // if (isOver) {
-    //     if (canDrop) {
-    //         return 'rgb(188,251,255)'
-    //     } else if (!canDrop) {
-    //         return 'rgb(255,188,188)'
-    //     }
-    // } else {
-    //     return '';
-    // }
-    // };
+
 
     return (
         <div ref={drop} className={className}>
@@ -298,15 +279,15 @@ const Cell = ({children, className, title, G, ctx, ID}) => {
         </div>
     )
 }
-// const [items, setItems] = useState(tasks);
+
 
 export const PlayerHand = ({G, ctx, ID}) => {
-    console.log(ID);
-    const [items, setItems] = useState(cardIds);
+
+    const [items, setItems] = useState(companyDeck);
 
     const isMobile = window.innerWidth < 600;
 
-    const card = companyDeck[1];
+    const card = G.players[0].handCompanyDeck[2];
 
     const moveCardHandler = (dragIndex, hoverIndex) => {
 
@@ -328,9 +309,7 @@ export const PlayerHand = ({G, ctx, ID}) => {
     };
 
     const returnItemsForCell = (cellName) => {
-        return items
-            .filter((item) => item.cell === cellName)
-            .map((item, index) => (
+        return items.filter((item) => item.cell === cellName).map((item, index,G) => (
                 <MovableItem key={item.id}
                              name={item.name}
                              currentCellName={item.cell}
@@ -338,7 +317,7 @@ export const PlayerHand = ({G, ctx, ID}) => {
                              index={index}
                              moveCardHandler={moveCardHandler}
                              G={G}
-                             item={card}
+                             item={item}
                              playerID={ID}
                 />
             ))
@@ -386,12 +365,16 @@ export const PlayerHand = ({G, ctx, ID}) => {
         d9,
         d0
     } = CELL_NAMES;
-
+// TODO: map handcompany into cells
     return (
         <DndProvider backend={isMobile ? TouchBackend : HTML5Backend}>
             <div className={"companyBlock"}>
                 <div className={"companyFlex"}>
                     <div className="container">
+
+
+
+
                         <Cell title={a0} className='column '>
                             {returnItemsForCell(a0)}
                         </Cell>

@@ -1,3 +1,5 @@
+import {CELL_NAMES} from "../components/TestCellState/companyCellNames";
+
 export const companyDeck = [
     {
         id: 1,
@@ -5,7 +7,7 @@ export const companyDeck = [
         idValue: 1,
         direction: 2,
         synmain: "../img/company/14/background-1.png",
-        companyName: 'Dwellings, Inc.',
+        name: 'Dwellings, Inc.',
         type: 'consumer',
         initialValue: 2,
         initialCarbon: 2,
@@ -13,6 +15,7 @@ export const companyDeck = [
         actualCarbon: 2,
         companyBank: 0,
         svgmain: "/img/company/CC1.svg",
+        cell:CELL_NAMES.c2,
     },
 
     {
@@ -21,7 +24,7 @@ export const companyDeck = [
         idValue: 2,
         direction: 2,
         synmain: "../img/company/14/background-1.png",
-        companyName: 'Steaks, Inc.',
+        name: 'Steaks, Inc.',
         type: 'consumer',
         initialValue: 1,
         initialCarbon: 1,
@@ -29,6 +32,7 @@ export const companyDeck = [
         actualCarbon: 1,
         companyBank: 0,
         svgmain: "/img/company/CC2.svg",
+        cell:CELL_NAMES.b1,
     },
 
     {
@@ -37,7 +41,7 @@ export const companyDeck = [
         idValue: 3,
         direction: 2,
         synmain: "../img/company/14/background-1.png",
-        companyName: 'Smartphone, Inc.',
+        name: 'Smartphone, Inc.',
         type: 'consumer',
         initialValue: 3,
         initialCarbon: 1,
@@ -45,6 +49,7 @@ export const companyDeck = [
         actualCarbon: 1,
         companyBank: 0,
         svgmain: "/img/company/CC3.svg",
+        cell:CELL_NAMES.d2,
     },
 
     {
@@ -53,7 +58,7 @@ export const companyDeck = [
         idValue: 4,
         direction: 2,
         synmain: "../img/company/14/background-1.png",
-        companyName: 'Airline, Inc.',
+        name: 'Airline, Inc.',
         type: 'consumer',
         initialValue: 4,
         initialCarbon: 2,
@@ -61,6 +66,7 @@ export const companyDeck = [
         actualCarbon: 2,
         companyBank: 0,
         svgmain: "/img/company/CC4.svg",
+        cell:CELL_NAMES.b3,
     },
 
     {
@@ -69,7 +75,7 @@ export const companyDeck = [
         idValue: 5,
         direction: 1,
         synmain: "../img/company/14/background-1.png",
-        companyName: 'Aircraft, Inc.',
+        name: 'Aircraft, Inc.',
         type: 'production',
         initialValue: 4,
         initialCarbon: 2,
@@ -77,6 +83,7 @@ export const companyDeck = [
         actualCarbon: 2,
         companyBank: 0,
         svgmain: "/img/company/CC5.svg",
+        cell:CELL_NAMES.b2,
     },
 
     {
@@ -85,7 +92,7 @@ export const companyDeck = [
         idValue: 6,
         direction: 1,
         synmain: "../img/company/14/background-1.png",
-        companyName: 'Packaging, Inc.',
+        name: 'Packaging, Inc.',
         type: 'production',
         initialValue: 2,
         initialCarbon: 1,
@@ -93,6 +100,7 @@ export const companyDeck = [
         actualCarbon: 1,
         companyBank: 0,
         svgmain: "/img/company/CC6.svg",
+        cell:CELL_NAMES.b0,
     },
 
     {
@@ -101,7 +109,7 @@ export const companyDeck = [
         idValue: 7,
         direction: 1,
         synmain: "../img/company/14/background-1.png",
-        companyName: 'Chemicals, Inc.',
+        name: 'Chemicals, Inc.',
         type: 'production',
         initialValue: 4,
         initialCarbon: 2,
@@ -109,6 +117,7 @@ export const companyDeck = [
         actualCarbon: 2,
         companyBank: 0,
         svgmain: "/img/company/CC7.svg",
+        cell:'',
     },
 
     {
@@ -117,7 +126,7 @@ export const companyDeck = [
         idValue: 8,
         direction: 1,
         synmain: "../img/company/14/background-1.png",
-        companyName: 'Software, Inc.',
+        name: 'Software, Inc.',
         type: 'production',
         initialValue: 4,
         initialCarbon: 1,
@@ -125,6 +134,7 @@ export const companyDeck = [
         actualCarbon: 1,
         companyBank: 0,
         svgmain: "/img/company/CC8.svg",
+        cell:CELL_NAMES.d1,
     },
     {
         id: 9,
@@ -132,7 +142,7 @@ export const companyDeck = [
         idValue: 9,
         direction: 1,
         synmain: "../img/company/14/background-1.png",
-        companyName: 'Cement, Inc.',
+        name: 'Cement, Inc.',
         type: 'production',
         initialValue: 3,
         initialCarbon: 2,
@@ -140,6 +150,7 @@ export const companyDeck = [
         actualCarbon: 2,
         companyBank: 0,
         svgmain: "/img/company/CC9.svg",
+        cell:CELL_NAMES.c1,
     },
 
     {
@@ -148,7 +159,7 @@ export const companyDeck = [
         idValue: 10,
         direction: 4,
         synmain: "../img/company/14/background-1.png",
-        companyName: 'Shipping, Inc.',
+        name: 'Shipping, Inc.',
         type: 'distribution',
         initialValue: 4,
         initialCarbon: 3,
@@ -156,6 +167,7 @@ export const companyDeck = [
         actualCarbon: 3,
         companyBank: 0,
         svgmain: "/img/company/CC10.svg",
+        cell:'',
     },
 
     {
@@ -164,7 +176,7 @@ export const companyDeck = [
         idValue: 11,
         direction: 4,
         synmain: "../img/company/14/background-1.png",
-        companyName: 'Road Transport, Inc.',
+        name: 'Road Transport, Inc.',
         type: 'distribution',
         initialValue: 5,
         initialCarbon: 3,
@@ -172,6 +184,7 @@ export const companyDeck = [
         actualCarbon: 3,
         companyBank: 0,
         svgmain: "/img/company/CC11.svg",
+        cell:CELL_NAMES.c6,
     },
 
     {
@@ -180,7 +193,7 @@ export const companyDeck = [
         idValue: 12,
         direction: 4,
         synmain: "../img/company/14/background-1.png",
-        companyName: 'Data & Wireless, Inc.',
+        name: 'Data & Wireless, Inc.',
         type: 'distribution',
         initialValue: 3,
         initialCarbon: 2,
@@ -188,6 +201,7 @@ export const companyDeck = [
         actualCarbon: 2,
         companyBank: 0,
         svgmain: "/img/company/CC12.svg",
+        cell:'',
     },
 
     {
@@ -196,7 +210,7 @@ export const companyDeck = [
         idValue: 13,
         direction: 4,
         synmain: "../img/company/14/background-1.png",
-        companyName: 'Grid & Pipeline, Inc.',
+        name: 'Grid & Pipeline, Inc.',
         type: 'distribution',
         initialValue: 3,
         initialCarbon: 1,
@@ -204,6 +218,7 @@ export const companyDeck = [
         actualCarbon: 1,
         companyBank: 0,
         svgmain: "/img/company/CC13.svg",
+        cell:CELL_NAMES.d6,
     },
 
     {
@@ -212,7 +227,7 @@ export const companyDeck = [
         idValue: 14,
         direction: 3,
         synmain: "../img/company/14/background-1.png",
-        companyName: 'Oil & Gas, Inc.',
+        name: 'Oil & Gas, Inc.',
         type: 'resource',
         initialValue: 6,
         initialCarbon: 3,
@@ -220,6 +235,7 @@ export const companyDeck = [
         actualCarbon: 3,
         companyBank: 0,
         svgmain: "/img/company/CC14.svg",
+        cell:CELL_NAMES.c7,
     },
 
     {
@@ -228,7 +244,7 @@ export const companyDeck = [
         idValue: 15,
         direction: 3,
         synmain: "../img/company/14/background-1.png",
-        companyName: 'Sand & Metal, Inc.',
+        name: 'Sand & Metal, Inc.',
         type: 'resource',
         initialValue: 2,
         initialCarbon: 1,
@@ -236,6 +252,7 @@ export const companyDeck = [
         actualCarbon: 1,
         companyBank: 0,
         svgmain: "/img/company/CC15.svg",
+        cell:'',
     },
 
     {
@@ -244,7 +261,7 @@ export const companyDeck = [
         idValue: 16,
         direction: 3,
         synmain: "../img/company/16/background-16.png",
-        companyName: 'Farm, Inc.',
+        name: 'Farm, Inc.',
         type: 'resource',
         initialValue: 3,
         initialCarbon: 2,
@@ -252,6 +269,7 @@ export const companyDeck = [
         actualCarbon: 2,
         companyBank: 0,
         svgmain: "/img/company/CC16.svg",
+        cell:'',
     },
 
     {
@@ -261,7 +279,7 @@ export const companyDeck = [
         direction: 3,
         synmain: "../img/company/14/background-1.png",
         // svgmain:"../img/company/CompositeLayer.svg",
-        companyName: 'Wind Power, Inc.',
+        name: 'Wind Power, Inc.',
         type: 'resource',
         initialValue: 3,
         initialCarbon: 0,
@@ -269,6 +287,7 @@ export const companyDeck = [
         actualCarbon: 0,
         companyBank: 0,
         svgmain: "/img/company/CC17.svg",
+        cell:CELL_NAMES.d7,
     },
 
     {
@@ -277,7 +296,7 @@ export const companyDeck = [
         idValue: 18,
         direction: 3,
         synmain: "../img/company/14/background-1.png",
-        companyName: 'Recycling, Inc.',
+        name: 'Recycling, Inc.',
         type: 'resource',
         initialValue: 5,
         initialCarbon: 1,
@@ -285,6 +304,7 @@ export const companyDeck = [
         actualCarbon: 1,
         companyBank: 0,
         svgmain: "/img/company/CC18.svg",
+        cell:'',
     },
 
 ];
