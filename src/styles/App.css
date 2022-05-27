@@ -1,0 +1,228 @@
+
+.container {
+    width: 600px;
+    /*height: 233px;*/
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.companyBlock {
+    display: block;
+    margin-top: 120px;
+}
+
+.marginTest{
+    /*position: absolute;*/
+    margin-bottom: 100px;
+}
+
+.companyFlex {
+    display: flex;
+    justify-content: space-between;
+    touch-action: none;
+    width: 1860px;
+    height: 240px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: -120px;
+
+}
+
+.eventCard {
+    display: flex;
+
+    margin-top: 0px;
+/*  must be -120 to fit old mat   */
+
+}
+.teamEventCard{
+    margin-top: 120px;
+}
+
+.lower {
+    margin-top: 180px;
+}
+
+.column {
+    height: 120px;
+    /*min-height: 90px;*/
+    width: 120px;
+    /*margin: 10px;*/
+    border-radius: 10px;
+    /*box-shadow: 1px 1px 3px rgba(0,0,0,0.5);*/
+    /*border: 1px solid #a49f9f;*/
+    /* Параметры границы */
+    display: flex;
+    /*margin-left: 2px;*/
+    /*margin-top: 2px;*/
+    /*justify-content: center;*/
+    /*background-color: black;*/
+    flex-wrap: wrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*.do-it-column {*/
+/*    background-color: #fff0f0;*/
+/*}*/
+
+/*.in-progress-column {*/
+/*    background-color: #fef2e7;*/
+/*}*/
+
+/*.awaiting-review-column {*/
+/*    background-color: #fffada;*/
+/*}*/
+
+/*.done-column {*/
+/*    background-color: #f5ffe5;*/
+/*}*/
+
+.movable-item {
+    border-radius: 15px;
+    background-color: #fafdff;
+    height: 90px;
+    width: 90px;
+    /*margin: 10px auto;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.companyBank{
+display: flex;
+    width: 1080px;
+    flex-wrap: wrap;
+    /*margin-left: 240px;*/
+    /*margin-right:120px;*/
+    /*margin-top:180px;*/
+
+}
+
+.mainFont {
+    font-family: "lato",sans-serif;
+}
+@font-face {
+    font-family: "lato",sans-serif;
+    src: url("./fonts/Lato-Black.ttf") format("truetype");
+}
+
+
+.greyFont {
+    color: #B2B2B2;
+
+}
+.mainTeam{
+    margin-left: 120px;
+}
+.teamBank{
+    display: flex;
+    flex-wrap: wrap;
+    width: 360px;
+    height: 240px;
+    /*margin: 180px 120px;*/
+}
+.cellFlow{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+.flowTeam{
+    display: flex;
+    justify-content: space-between;
+    width: 1620px;
+}
+.lowerTeam{
+   margin-top: 240px;
+}
+.cellColumn{
+
+    height: 120px;
+    /*min-height: 90px;*/
+    width: 60px;
+    /*margin: 10px;*/
+    border-radius: 8px;
+    /*box-shadow: 1px 1px 3px rgba(0,0,0,0.5);*/
+    /*border: 1px solid #a49f9f;*/
+    /* Параметры границы */
+    display: flex;
+    /*margin-left: 2px;*/
+    /*margin-top: 2px;*/
+    /*justify-content: center;*/
+    /*background-color: black;*/
+    /*flex-wrap: wrap;*/
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.eventTeamCell{
+    /*width: 60px;*/
+    /*height: 120px;*/
+    /*padding-left: 300px;*/
+    /*padding-top:100px;*/
+    margin-left:1020px;
+}
+
+.testBorder{
+    /*border: 1px solid red;*/
+
+}
+.bidContainer{
+    width: 420px;
+    height:120px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bidCoinCell{
+    margin-left: 60px;
+    /*border: 1px solid red;*/
+}
+
+.headingTop{
+
+}
+
+.italicButton{
+
+    width: 200px;
+    height: 50px;
+    background-color: antiquewhite;
+    color: darkgreen;
+    font-weight: bold;
+    border: 2px solid black;
+    text-align: center;
+    align-content: center;
+
+
+
+}
+.italicButton:hover{
+  background-color: silver;
+ }
+.italicText{
+    font-family: 'Macondo', cursive;
+    width: 200px;
+    height: 50px;
+
+
+}
+.ssylkaParagraph{
+
+}
+.ssylka{
+
+
+}
