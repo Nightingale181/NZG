@@ -19,7 +19,7 @@ export let companyDeck = [
         actualCarbon: 2,
         companyBank: 0,
         svgmain: "/img/newCards/CC1.svg",
-        cell:CELL_NAMES.c2,
+        cell:CELL_NAMES.a0,
     },
 
     {
@@ -36,7 +36,7 @@ export let companyDeck = [
         actualCarbon: 1,
         companyBank: 0,
         svgmain: "/img/newCards/CC2.svg",
-        cell:CELL_NAMES.b1,
+        cell:CELL_NAMES.a1,
     },
 
     {
@@ -53,7 +53,7 @@ export let companyDeck = [
         actualCarbon: 1,
         companyBank: 0,
         svgmain: "/img/newCards/CC3.svg",
-        cell:CELL_NAMES.d2,
+        cell:CELL_NAMES.b9,
     },
 
     {
@@ -70,7 +70,7 @@ export let companyDeck = [
         actualCarbon: 2,
         companyBank: 0,
         svgmain: "/img/newCards/CC4.svg",
-        cell:CELL_NAMES.b3,
+        cell:CELL_NAMES.a5,
     },
 
     {
@@ -87,7 +87,7 @@ export let companyDeck = [
         actualCarbon: 2,
         companyBank: 0,
         svgmain: "/img/newCards/CC5.svg",
-        cell:CELL_NAMES.b2,
+        cell:CELL_NAMES.b4,
     },
 
     {
@@ -104,7 +104,7 @@ export let companyDeck = [
         actualCarbon: 1,
         companyBank: 0,
         svgmain: "/img/newCards/CC6.svg",
-        cell:CELL_NAMES.b0,
+        cell:CELL_NAMES.b3,
     },
 
     {
@@ -237,7 +237,7 @@ export let companyDeck = [
         actualCarbon: 3,
         companyBank: 0,
         svgmain: "/img/newCards/CC14.svg",
-        cell:CELL_NAMES.c7,
+        cell:CELL_NAMES.c0,
     },
 
     {
@@ -289,7 +289,7 @@ export let companyDeck = [
         actualCarbon: 0,
         companyBank: 0,
         svgmain: "/img/newCards/CC17.svg",
-        cell:CELL_NAMES.d7,
+        cell:CELL_NAMES.d7  ,
     },
 
     {
@@ -306,7 +306,7 @@ export let companyDeck = [
         actualCarbon: 1,
         companyBank: 0,
         svgmain: "/img/newCards/CC18.svg",
-        cell:CELL_NAMES.k7,
+        cell:CELL_NAMES.k5,
     },
 
 ];

@@ -158,6 +158,15 @@ export const Game  = {
                     // topCard=G.companyDeck[idCard-1].order===idCard
                     // console.log({topCard})
                 },
+                MoveCard:(G,ctx,name,idCard)=>{
+                    // alert(name);
+                    console.log(name);
+
+
+                },
+                ChangeEvent:(G,ctx)=>{
+                    G.companyDeck[1].actualCarbon--;
+                },
                 InitialDraw: (G, ctx) => {
                     for (let i = 0; i < 4; i++) {
                         topCard = G.companyDeck.shift();

@@ -109,7 +109,7 @@ const MovableItem = ({name,idCard, index, currentCellName, moveCardHandler, setI
         end: (item, monitor) => {
 
             const dropResult = monitor.getDropResult();
-            // moves.IncreaseCoin(name,idCard);
+            moves.MoveCard(name,idCard);
 
 
 
@@ -211,7 +211,8 @@ const Cell = ({children, className, name, title, G, ctx, ID}) => {
 export const PlayerHand = ({G, ctx, moves, ID, children}) => {
 
     const [items, setItems] = useState(G.companyDeck);
-
+    const [testUpdate,setTest]=useState(0)
+    console.log(testUpdate);
     //TODO: this stops the board from update. Change to move cards. Needs to be fixed
 
     // if (items != G.companyDeck){
@@ -425,8 +426,8 @@ export const PlayerHand = ({G, ctx, moves, ID, children}) => {
                             {returnItemsForCell(a9, G)}
                         </Cell>
                     </div>
-                    <div className={"eventCard"}>
-                        <CarbonEventCard/>
+                    <div className={"eventCard"} >
+                        <CarbonEventCard setTest={setTest} moves={moves} />
                     </div>
                     <div className="container">
                         <Cell title={b0} className='column'>

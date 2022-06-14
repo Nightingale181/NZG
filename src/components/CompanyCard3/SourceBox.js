@@ -15,7 +15,10 @@ const useStyles = makeStyles(theme => (
             height: "120px",
             borderRadius: "10px",
             // backgroundColor:"white",
-            border: "black",
+            // border: "black",
+            // borderStyle:"solid",
+            // borderImage:"linear-gradient(blue,transparent)1",
+            // borderBottom:0,
         },
 
         backImage: item => ({
@@ -309,7 +312,7 @@ export const CompanyCard3 = ({G, item, name , idCard, playerID, children, moves,
     return (
         <div ref={ref}>
             <Box className={`${classes.mainSection}`}>
-                <Box className={`${classes.backImage}`}>
+                <Box  className={`${classes.backImage}`}>
                     {cardDirectionClass(item, moves)}
                     {children}
                 </Box>

@@ -2,8 +2,13 @@ export const carbonDeck = [
 
     //TODO optimise and make it readable
     {
-        backImage:"../img/ce1test.png",
-        frontImage:"../img/carbonevent/EventCard1.png",
+        backImage: "/img/newCards/CE_Back.svg",
+    },
+
+    {
+        backImage: "/img/newCards/CE_Back.svg",
+
+        frontImage:"/img/carbonevent/CE1.svg",
         event1: {
             id: [1],
             text:"Cities upcycle existing buildings to new efficient energy standarts",
@@ -23,6 +28,8 @@ export const carbonDeck = [
     },
 
     {
+        backImage: "/img/newCards/CE_Back.svg",
+        frontImage:"/img/carbonevent/CE2.svg",
         event1: {
             id: [1],
             text:"Cities upcycle existing buildings to new efficient energy standarts",
@@ -30,7 +37,7 @@ export const carbonDeck = [
             carbonRaise: -1,
             synergy: true,
 
-        },
+},
         event2: {
             id: [1, 11, 16],
             text:"Cities upcycle existing buildings to new efficient energy standarts",

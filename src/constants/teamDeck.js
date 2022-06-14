@@ -131,7 +131,7 @@ export const teamDeck  = [
         reduceCarb: false,
         changeEvent: true,
         counter: ["GRO"],
-        svgmain: "/img/teamcards/TC2.svg",
+        svgmain: "/img/teamcards/TC12.svg",
         cell:CELL_NAMES.f3,
     },
     ]
