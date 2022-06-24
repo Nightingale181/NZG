@@ -44,7 +44,8 @@ const useStyles = makeStyles(theme => ({
 
 
 
-const MovableItem = ({name, index, currentCellName, moveCardHandler, setItems, G, playerID, item}) => {
+const MovableTeamCard = ({name, index, currentCellName, moveCardHandler, setItems, G,
+                             playerID, item}) => {
     const changeItemCell = (currentItem, cellName) => {
         setItems((prevState) => {
             return prevState.map(e => {
@@ -61,7 +62,7 @@ const MovableItem = ({name, index, currentCellName, moveCardHandler, setItems, G
     const ref = useRef(null);
 
     const [, drop] = useDrop({
-        accept: 'companyCard',
+        accept: 'TeamCard',
         // hover(item: any, monitor) {
         //     if (!ref.current) {
         //         return;
@@ -102,7 +103,7 @@ const MovableItem = ({name, index, currentCellName, moveCardHandler, setItems, G
     });
 
     const [{isDragging}, drag] = useDrag({
-        item: {index, name, currentCellName, type: 'companyCard'},
+        item: {index, name, currentCellName, type: 'TeamCard'},
         end: (item, monitor) => {
             const dropResult = monitor.getDropResult();
 
@@ -142,13 +143,14 @@ const MovableItem = ({name, index, currentCellName, moveCardHandler, setItems, G
     )
 }
 
-const Cell = ({children, className, title, G, ctx, ID}) => {
-    const [{isOver, canDrop}, drop] = useDrop({
-        accept: 'companyCard',
+const TeamCell = ({children, className, title, G, ctx, ID}) => {
+    const [{isOver, canDrop,didDrop}, drop] = useDrop({
+        accept: 'TeamCard',
         drop: () => ({name: title}),
         collect: (monitor) => ({
             isOver: monitor.isOver(),
             canDrop: monitor.canDrop(),
+            didDrop:monitor.didDrop(),
         }),
 
     });
@@ -165,39 +167,39 @@ const Cell = ({children, className, title, G, ctx, ID}) => {
 
 export const TeamHand = ({G, ctx, ID}) => {
 
-    const [items, setItems] = useState(teamDeck);
+    const [teamCards, setTeamCards] = useState(teamDeck);
     const classes = useStyles(carbonDeck);
     const isMobile = window.innerWidth < 600;
 
     // const card = G.players[0].handCompanyDeck[2];
 
-    const moveCardHandler = (dragIndex, hoverIndex) => {
+    // const moveCardHandler = (dragIndex, hoverIndex) => {
+    //
+    //     const dragItem = teamCards[dragIndex];
+    //
+    //     if (dragItem) {
+    //         setTeamCards((prevState => {
+    //             const copiedStateArray = [...prevState];
+    //
+    //             // remove item by "hoverIndex" and put "dragItem" instead
+    //             const prevItem = copiedStateArray.splice(hoverIndex, 1, dragItem);
+    //
+    //             // remove item by "dragIndex" and put "prevItem" instead
+    //             copiedStateArray.splice(dragIndex, 1, prevItem[0]);
+    //
+    //             return copiedStateArray;
+    //         }));
+    //     }
+    // };
 
-        const dragItem = items[dragIndex];
-
-        if (dragItem) {
-            setItems((prevState => {
-                const copiedStateArray = [...prevState];
-
-                // remove item by "hoverIndex" and put "dragItem" instead
-                const prevItem = copiedStateArray.splice(hoverIndex, 1, dragItem);
-
-                // remove item by "dragIndex" and put "prevItem" instead
-                copiedStateArray.splice(dragIndex, 1, prevItem[0]);
-
-                return copiedStateArray;
-            }));
-        }
-    };
-
-    const returnItemsForCell = (cellName) => {
-        return items.filter((item) => item.cell === cellName).map((item, index, G) => (
-            <MovableItem key={item.id}
+    const returnItemsForTeamCell = (cellName) => {
+        return teamCards.filter((item) => item.cell === cellName).map((item, index, G) => (
+            <MovableTeamCard key={item.id}
                          name={item.name}
                          currentCellName={item.cell}
-                         setItems={setItems}
+                         setItems={setTeamCards}
                          index={index}
-                         moveCardHandler={moveCardHandler}
+                         // moveCardHandler={moveCardHandler}
                          G={G}
                          item={item}
                          playerID={ID}
@@ -252,7 +254,7 @@ export const TeamHand = ({G, ctx, ID}) => {
         j10,
         j11,
     } = CELL_NAMES;
-    const mapBank = () =>{
+    const mapTeamBank = () =>{
 
         let cellId;
         let bankId = ["j"];
@@ -260,9 +262,9 @@ export const TeamHand = ({G, ctx, ID}) => {
         for (let i=0; i <12 ; i++){
             cellId = bankId[0].concat(i);
             cellsList.push(
-                <Cell title={cellId} className={"cellColumn"}>
-                    {returnItemsForCell(cellId)}
-                </Cell>
+                <TeamCell title={cellId} className={"cellColumn"}>
+                    {returnItemsForTeamCell(cellId)}
+                </TeamCell>
             )
 
         }
@@ -275,126 +277,126 @@ export const TeamHand = ({G, ctx, ID}) => {
             <div className={"mainTeam"}>
             <div className={"flowTeam"}>
             <div className={"cellFlow"}>
-                <Cell title={f0} className='cellColumn '>
-                    {returnItemsForCell(f0)}
-                </Cell>
-                <Cell title={f1} className='cellColumn '>
-                    {returnItemsForCell(f1)}
-                </Cell>
-                <Cell title={f2} className='cellColumn '>
-                    {returnItemsForCell(f2)}
-                </Cell>
-                <Cell title={f3} className='cellColumn'>
-                    {returnItemsForCell(f3)}
-                </Cell>
-                <Cell title={f4} className='cellColumn'>
-                    {returnItemsForCell(f4)}
-                </Cell>
-                <Cell title={f5} className='cellColumn'>
-                    {returnItemsForCell(f5)}
-                </Cell>
-                <Cell title={f6} className='cellColumn'>
-                    {returnItemsForCell(f6)}
-                </Cell>
-                <Cell title={f7} className='cellColumn'>
-                    {returnItemsForCell(f7)}
-                </Cell>
+                <TeamCell title={f0} className='cellColumn '>
+                    {returnItemsForTeamCell(f0)}
+                </TeamCell>
+                <TeamCell title={f1} className='cellColumn '>
+                    {returnItemsForTeamCell(f1)}
+                </TeamCell>
+                <TeamCell title={f2} className='cellColumn '>
+                    {returnItemsForTeamCell(f2)}
+                </TeamCell>
+                <TeamCell title={f3} className='cellColumn'>
+                    {returnItemsForTeamCell(f3)}
+                </TeamCell>
+                <TeamCell title={f4} className='cellColumn'>
+                    {returnItemsForTeamCell(f4)}
+                </TeamCell>
+                <TeamCell title={f5} className='cellColumn'>
+                    {returnItemsForTeamCell(f5)}
+                </TeamCell>
+                <TeamCell title={f6} className='cellColumn'>
+                    {returnItemsForTeamCell(f6)}
+                </TeamCell>
+                <TeamCell title={f7} className='cellColumn'>
+                    {returnItemsForTeamCell(f7)}
+                </TeamCell>
 
             </div>
                 <div className={"cellFlow"}>
-                    <Cell title={g0} className='cellColumn '>
-                        {returnItemsForCell(g0)}
-                    </Cell>
-                    <Cell title={g1} className='cellColumn '>
-                        {returnItemsForCell(g1)}
-                    </Cell>
-                    <Cell title={g2} className='cellColumn '>
-                        {returnItemsForCell(g2)}
-                    </Cell>
-                    <Cell title={g3} className='cellColumn'>
-                        {returnItemsForCell(g3)}
-                    </Cell>
-                    <Cell title={g4} className='cellColumn'>
-                        {returnItemsForCell(g4)}
-                    </Cell>
-                    <Cell title={g5} className='cellColumn'>
-                        {returnItemsForCell(g5)}
-                    </Cell>
-                    <Cell title={g6} className='cellColumn'>
-                        {returnItemsForCell(g6)}
-                    </Cell>
-                    <Cell title={g7} className='cellColumn'>
-                        {returnItemsForCell(g7)}
-                    </Cell>
+                    <TeamCell title={g0} className='cellColumn '>
+                        {returnItemsForTeamCell(g0)}
+                    </TeamCell>
+                    <TeamCell title={g1} className='cellColumn '>
+                        {returnItemsForTeamCell(g1)}
+                    </TeamCell>
+                    <TeamCell title={g2} className='cellColumn '>
+                        {returnItemsForTeamCell(g2)}
+                    </TeamCell>
+                    <TeamCell title={g3} className='cellColumn'>
+                        {returnItemsForTeamCell(g3)}
+                    </TeamCell>
+                    <TeamCell title={g4} className='cellColumn'>
+                        {returnItemsForTeamCell(g4)}
+                    </TeamCell>
+                    <TeamCell title={g5} className='cellColumn'>
+                        {returnItemsForTeamCell(g5)}
+                    </TeamCell>
+                    <TeamCell title={g6} className='cellColumn'>
+                        {returnItemsForTeamCell(g6)}
+                    </TeamCell>
+                    <TeamCell title={g7} className='cellColumn'>
+                        {returnItemsForTeamCell(g7)}
+                    </TeamCell>
 
                 </div>
             </div>
             <div>
-                <Cell title={e0} className='cellColumn eventTeamCell'>
-                    {returnItemsForCell(e0)}
-                </Cell>
+                <TeamCell title={e0} className='cellColumn eventTeamCell'>
+                    {returnItemsForTeamCell(e0)}
+                </TeamCell>
             </div>
                 <div className={classes.companyBankFlex}>
                     <div className={classes.bankFlex}>
 
                     </div>
                     <div className={"teamBank"}>
-                        {mapBank()}
+                        {mapTeamBank()}
                     </div>
                 </div>
             <div className={"flowTeam"}>
                 <div className={"cellFlow  lowerTeam"}>
-                    <Cell title={h0} className='cellColumn '>
-                        {returnItemsForCell(h0)}
-                    </Cell>
-                    <Cell title={h1} className='cellColumn '>
-                        {returnItemsForCell(h1)}
-                    </Cell>
-                    <Cell title={h2} className='cellColumn '>
-                        {returnItemsForCell(h2)}
-                    </Cell>
-                    <Cell title={h3} className='cellColumn'>
-                        {returnItemsForCell(h3)}
-                    </Cell>
-                    <Cell title={h4} className='cellColumn'>
-                        {returnItemsForCell(h4)}
-                    </Cell>
-                    <Cell title={h5} className='cellColumn'>
-                        {returnItemsForCell(h5)}
-                    </Cell>
-                    <Cell title={h6} className='cellColumn'>
-                        {returnItemsForCell(h6)}
-                    </Cell>
-                    <Cell title={h7} className='cellColumn'>
-                        {returnItemsForCell(h7)}
-                    </Cell>
+                    <TeamCell title={h0} className='cellColumn '>
+                        {returnItemsForTeamCell(h0)}
+                    </TeamCell>
+                    <TeamCell title={h1} className='cellColumn '>
+                        {returnItemsForTeamCell(h1)}
+                    </TeamCell>
+                    <TeamCell title={h2} className='cellColumn '>
+                        {returnItemsForTeamCell(h2)}
+                    </TeamCell>
+                    <TeamCell title={h3} className='cellColumn'>
+                        {returnItemsForTeamCell(h3)}
+                    </TeamCell>
+                    <TeamCell title={h4} className='cellColumn'>
+                        {returnItemsForTeamCell(h4)}
+                    </TeamCell>
+                    <TeamCell title={h5} className='cellColumn'>
+                        {returnItemsForTeamCell(h5)}
+                    </TeamCell>
+                    <TeamCell title={h6} className='cellColumn'>
+                        {returnItemsForTeamCell(h6)}
+                    </TeamCell>
+                    <TeamCell title={h7} className='cellColumn'>
+                        {returnItemsForTeamCell(h7)}
+                    </TeamCell>
 
                 </div>
                 <div className={"cellFlow lowerTeam"}>
-                    <Cell title={i0} className='cellColumn '>
-                        {returnItemsForCell(i0)}
-                    </Cell>
-                    <Cell title={i1} className='cellColumn '>
-                        {returnItemsForCell(i1)}
-                    </Cell>
-                    <Cell title={i2} className='cellColumn '>
-                        {returnItemsForCell(i2)}
-                    </Cell>
-                    <Cell title={i3} className='cellColumn'>
-                        {returnItemsForCell(i3)}
-                    </Cell>
-                    <Cell title={i4} className='cellColumn'>
-                        {returnItemsForCell(i4)}
-                    </Cell>
-                    <Cell title={i5} className='cellColumn'>
-                        {returnItemsForCell(i5)}
-                    </Cell>
-                    <Cell title={i6} className='cellColumn'>
-                        {returnItemsForCell(i6)}
-                    </Cell>
-                    <Cell title={i7} className='cellColumn'>
-                        {returnItemsForCell(i7)}
-                    </Cell>
+                    <TeamCell title={i0} className='cellColumn '>
+                        {returnItemsForTeamCell(i0)}
+                    </TeamCell>
+                    <TeamCell title={i1} className='cellColumn '>
+                        {returnItemsForTeamCell(i1)}
+                    </TeamCell>
+                    <TeamCell title={i2} className='cellColumn '>
+                        {returnItemsForTeamCell(i2)}
+                    </TeamCell>
+                    <TeamCell title={i3} className='cellColumn'>
+                        {returnItemsForTeamCell(i3)}
+                    </TeamCell>
+                    <TeamCell title={i4} className='cellColumn'>
+                        {returnItemsForTeamCell(i4)}
+                    </TeamCell>
+                    <TeamCell title={i5} className='cellColumn'>
+                        {returnItemsForTeamCell(i5)}
+                    </TeamCell>
+                    <TeamCell title={i6} className='cellColumn'>
+                        {returnItemsForTeamCell(i6)}
+                    </TeamCell>
+                    <TeamCell title={i7} className='cellColumn'>
+                        {returnItemsForTeamCell(i7)}
+                    </TeamCell>
 
                 </div>
             </div>

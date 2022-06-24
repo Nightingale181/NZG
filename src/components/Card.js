@@ -288,13 +288,13 @@ export const Card = ({G, ctx,moves,...props}) => {
         <>
             <Box paddingLeft={"60px"} paddingTop={"60px"}>
                 <Box display={"flex"} justifyContent={"space-between"} width={"1980px"}>
-                    <Box display={"flex"} justifyContent={"space-between"} width={"1860px"}>
-                        <NamePlate avatarId={1}/>
-                        <Box position={"absolute"} >
-                            <TeamHand G={G} ctx={ctx}/>
-                        </Box>
-                        <NamePlate avatarId={2}/>
-                    </Box>
+                    {/*<Box display={"flex"} justifyContent={"space-between"} width={"1860px"}>*/}
+
+                    {/*    <Box position={"absolute"} >*/}
+                    {/*        <TeamHand G={G} ctx={ctx}/>*/}
+                    {/*    </Box>*/}
+
+                    {/*</Box>*/}
                     <Box display={"flex"}>
                         {/*<TeamCard />*/}
                         {/*/!*<TeamCard />*!/*/}
@@ -361,7 +361,7 @@ export const Card = ({G, ctx,moves,...props}) => {
 
                     {/*</Box>*/}
                         <Box position={"absolute"}>
-                            {/*<Box>*/}
+                    {/*        <Box>*/}
                             <PlayerHand ID={0} ctx={ctx} moves={moves} G={G} />
                         </Box>
 
@@ -458,8 +458,7 @@ export const Card = ({G, ctx,moves,...props}) => {
 
                     </Box>
                     <Box display={"flex"} justifyContent={"space-between"} width={"1900px"} mt={75} mr={15}>
-                    <NamePlate avatarId={4} />
-                    <NamePlate avatarId={3} />
+
                     </Box>
                     {/*<Box display={"flex"} justifyContent={"space-between"} width={185}>*/}
                     {/*    <NamePlate G={G} playerId={0} />*/}

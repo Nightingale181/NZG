@@ -9,7 +9,7 @@ export const teamDeck  = [
         reduceCarb: true,
         changeEvent: true,
         counter: ["GEO","GSO","GRO"],
-        svgmain: "/img/teamcards/TC3.svg",
+        svgmain: "/img/teamcards/TC1.svg",
         cell: CELL_NAMES.g0,
     },
     {
@@ -20,7 +20,7 @@ export const teamDeck  = [
         reduceCarb: true,
         changeEvent: false,
         counter: ["GSO"],
-        svgmain: "/img/teamcards/TC1.svg",
+        svgmain: "/img/teamcards/TC2.svg",
         cell:CELL_NAMES.h0,
     },
     {
@@ -31,7 +31,7 @@ export const teamDeck  = [
         reduceCarb: false,
         changeEvent: true,
         counter: ["GRO"],
-        svgmain: "/img/teamcards/TC2.svg",
+        svgmain: "/img/teamcards/TC3.svg",
         cell: CELL_NAMES.i0,
     },
     {
@@ -42,7 +42,7 @@ export const teamDeck  = [
         reduceCarb: true,
         changeEvent: true,
         counter: ["GEO","GSO","GRO"],
-        svgmain: "/img/teamcards/TC3.svg",
+        svgmain: "/img/teamcards/TC4.svg",
         cell:CELL_NAMES.j0,
     },
     {
@@ -53,7 +53,7 @@ export const teamDeck  = [
         reduceCarb: true,
         changeEvent: false,
         counter: ["GSO"],
-        svgmain: "/img/teamcards/TC1.svg",
+        svgmain: "/img/teamcards/TC5.svg",
         cell:CELL_NAMES.j1,
     },
     {
@@ -64,7 +64,7 @@ export const teamDeck  = [
         reduceCarb: false,
         changeEvent: true,
         counter: ["GRO"],
-        svgmain: "/img/teamcards/TC2.svg",
+        svgmain: "/img/teamcards/TC6.svg",
         cell:CELL_NAMES.j2,
     },
     {
@@ -75,7 +75,7 @@ export const teamDeck  = [
         reduceCarb: true,
         changeEvent: true,
         counter: ["GEO","GSO","GRO"],
-        svgmain: "/img/teamcards/TC3.svg",
+        svgmain: "/img/teamcards/TC7.svg",
         cell:CELL_NAMES.j3,
     },
     {
@@ -86,8 +86,8 @@ export const teamDeck  = [
         reduceCarb: true,
         changeEvent: false,
         counter: ["GSO"],
-        svgmain: "/img/teamcards/TC1.svg",
-        cell:CELL_NAMES.f1,
+        svgmain: "/img/teamcards/TC8.svg",
+        cell:CELL_NAMES.j6,
     },
     {
         id:27,
@@ -97,7 +97,7 @@ export const teamDeck  = [
         reduceCarb: false,
         changeEvent: true,
         counter: ["GRO"],
-        svgmain: "/img/teamcards/TC2.svg",
+        svgmain: "/img/teamcards/TC9.svg",
         cell:CELL_NAMES.j4,
     },
     {
@@ -108,7 +108,7 @@ export const teamDeck  = [
         reduceCarb: true,
         changeEvent: true,
         counter: ["GEO","GSO","GRO"],
-        svgmain: "/img/teamcards/TC3.svg",
+        svgmain: "/img/teamcards/TC10.svg",
         cell:CELL_NAMES.j5,
     },
     {
@@ -119,8 +119,8 @@ export const teamDeck  = [
         reduceCarb: true,
         changeEvent: false,
         counter: ["GSO"],
-        svgmain: "/img/teamcards/TC1.svg",
-        cell:CELL_NAMES.f4,
+        svgmain: "/img/teamcards/TC11.svg",
+        cell:CELL_NAMES.f0,
 
     },
     {
@@ -132,6 +132,6 @@ export const teamDeck  = [
         changeEvent: true,
         counter: ["GRO"],
         svgmain: "/img/teamcards/TC12.svg",
-        cell:CELL_NAMES.f3,
+        cell:CELL_NAMES.f1,
     },
     ]
