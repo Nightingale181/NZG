@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!--Generator: Xara Designer (www.xara.com), SVG filter version: 6.6.0.0-->
+<svg fill="none" fill-rule="evenodd" stroke="black" stroke-width="0.501" stroke-linejoin="bevel" stroke-miterlimit="10" font-family="Times New Roman" font-size="16" style="font-variant-ligatures:none" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" overflow="visible" width="430.868pt" height="107.72pt" viewBox="1508.2 -451.454 430.868 107.72">
+ <defs>
+	</defs>
+ <g id="Grid 36x36mm" transform="scale(1 -1)">
+  <g id="Group" font-size="10" font-family="Lato Black">
+   <path d="M 1508.2,358.948 L 1508.2,436.24 C 1508.2,444.638 1515.02,451.454 1523.42,451.454 L 1562.06,451.452 L 1562.05,451.452 L 1562.06,397.594 L 1562.07,451.452 L 1562.07,451.452 L 1581.98,451.453 L 1631.12,451.453 C 1631.13,451.453 1631.13,451.454 1631.13,451.454 L 1650.45,451.453 L 1796.82,451.453 L 1816.14,451.454 C 1816.15,451.454 1816.15,451.453 1816.15,451.453 L 1865.3,451.453 L 1885.21,451.452 L 1885.2,451.452 L 1885.21,397.594 L 1885.22,451.452 L 1885.22,451.452 L 1923.86,451.454 C 1932.26,451.454 1939.07,444.638 1939.07,436.24 L 1939.07,358.948 C 1939.07,350.55 1932.26,343.734 1923.86,343.734 L 1885.22,343.736 L 1885.22,343.736 L 1885.21,397.594 L 1885.2,343.736 L 1885.21,343.736 L 1846.57,343.734 C 1846.56,343.734 1846.56,343.734 1846.55,343.735 L 1816.15,343.735 C 1816.15,343.734 1816.15,343.734 1816.14,343.734 L 1796.82,343.735 L 1758.17,343.735 L 1738.85,343.734 C 1738.84,343.734 1738.84,343.734 1738.84,343.735 L 1708.44,343.735 C 1708.43,343.734 1708.43,343.734 1708.43,343.734 L 1689.1,343.735 L 1650.45,343.735 L 1631.13,343.734 C 1631.13,343.734 1631.13,343.734 1631.12,343.735 L 1600.72,343.735 C 1600.72,343.734 1600.71,343.734 1600.71,343.734 L 1562.07,343.736 L 1562.07,343.736 L 1562.06,397.594 L 1562.05,343.736 L 1562.06,343.736 L 1523.42,343.734 C 1515.02,343.734 1508.2,350.55 1508.2,358.948 Z" stroke="none" fill="#ffffff" stroke-width="0.801" stroke-linejoin="miter" marker-start="none" marker-end="none"/>
+   <path d="M 1509.04,359.676 L 1509.04,435.512 C 1509.04,443.843 1515.8,450.605 1524.13,450.605 L 1591.9,450.605 L 1591.9,450.606 L 1868.39,450.606 L 1868.39,450.605 L 1923.14,450.605 C 1931.47,450.605 1938.23,443.843 1938.23,435.512 L 1938.23,359.676 C 1938.23,351.345 1931.47,344.583 1923.14,344.583 L 1524.13,344.583 C 1515.8,344.583 1509.04,351.345 1509.04,359.676 Z" stroke="none" fill="#00bf02" stroke-width="0.801" stroke-linejoin="miter" marker-start="none" marker-end="none"/>
+   <path d="M 1696.93,375.03 C 1684.48,389.774 1686.34,411.855 1701.1,424.283 C 1715.83,436.751 1737.88,434.889 1750.33,420.148 C 1762.8,405.403 1760.93,383.339 1746.17,370.885 C 1731.44,358.441 1709.38,360.303 1696.93,375.03 Z" stroke="none" fill="#ffffff" stroke-width="1.452" stroke-linejoin="miter" marker-start="none" marker-end="none"/>
+   <path d="M 1696.92,375.059 C 1684.49,389.81 1686.33,411.846 1701.08,424.319 C 1715.83,436.731 1737.88,434.892 1750.36,420.15 C 1762.8,405.411 1760.93,383.334 1746.18,370.888 C 1731.45,358.444 1709.38,360.297 1696.92,375.059 Z" fill="none" stroke="#539bc5" stroke-width="7.913" stroke-linejoin="miter" marker-start="none" marker-end="none"/>
+   <text xml:space="preserve" transform="translate(1723.52 399.909) scale(1 -1)" kerning="auto" stroke="none" fill="#000000" stroke-width="0.25" stroke-linejoin="round" stroke-linecap="round"><tspan x="-15.43" y="0">PLACE</tspan><tspan x="-8.589" y="11.996">BID</tspan></text>
+  </g>
+ </g>
+ <g id="Layer 2 - grids" transform="scale(1 -1)"/>
+ <g id="Layer 1" transform="scale(1 -1)"/>
+</svg>

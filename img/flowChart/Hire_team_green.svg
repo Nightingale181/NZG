@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!--Generator: Xara Designer (www.xara.com), SVG filter version: 6.6.0.0-->
+<svg fill="none" fill-rule="evenodd" stroke="black" stroke-width="0.501" stroke-linejoin="bevel" stroke-miterlimit="10" font-family="Times New Roman" font-size="16" style="font-variant-ligatures:none" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" overflow="visible" width="107.718pt" height="53.866pt" viewBox="1181.25 -1036.88 107.718 53.866">
+ <defs>
+	</defs>
+ <g id="Grid 36x36mm" transform="scale(1 -1)">
+  <path d="M 1181.25,998.227 L 1181.25,1021.67 C 1181.25,1030.06 1188.06,1036.88 1196.46,1036.88 L 1273.76,1036.88 C 1282.15,1036.88 1288.97,1030.06 1288.97,1021.67 L 1288.97,998.227 C 1288.97,989.829 1282.15,983.013 1273.76,983.013 L 1196.46,983.013 C 1188.06,983.013 1181.25,989.829 1181.25,998.227 Z" stroke="none" fill="#ffffff" stroke-width="0.802" stroke-linejoin="miter" marker-start="none" marker-end="none"/>
+  <path d="M 1182.1,998.954 L 1182.1,1020.94 C 1182.1,1029.27 1188.86,1036.03 1197.19,1036.03 L 1273.03,1036.03 C 1281.36,1036.03 1288.12,1029.27 1288.12,1020.94 L 1288.12,998.954 C 1288.12,990.623 1281.36,983.862 1273.03,983.862 L 1197.19,983.862 C 1188.86,983.862 1182.1,990.623 1182.1,998.954 Z" fill="#00bf02" stroke="none" stroke-width="0.8" stroke-linejoin="miter" marker-start="none" marker-end="none"/>
+  <text xml:space="preserve" transform="translate(1235.33 1012.79) scale(1 -1)" kerning="auto" fill="#ffffff" stroke="none" stroke-width="0.297" stroke-linejoin="round" stroke-linecap="round" font-family="Lato Black" font-size="11.894"><tspan x="-31.747" y="0">HIRE TEAM</tspan><tspan x="-37.575" y="14.268">ON AUCTION</tspan></text>
+ </g>
+</svg>

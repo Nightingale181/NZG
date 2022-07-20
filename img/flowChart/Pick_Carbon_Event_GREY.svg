@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!--Generator: Xara Designer (www.xara.com), SVG filter version: 6.6.0.0-->
+<svg fill="none" fill-rule="evenodd" stroke="black" stroke-width="0.501" stroke-linejoin="bevel" stroke-miterlimit="10" font-family="Times New Roman" font-size="16" style="font-variant-ligatures:none" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" overflow="visible" width="107.718pt" height="53.866pt" viewBox="460.951 -578.861 107.718 53.866">
+ <defs>
+	</defs>
+ <g id="Grid 36x36mm" transform="scale(1 -1)">
+  <g id="Group" font-size="12" font-family="Lato Black" stroke="none">
+   <path d="M 460.951,540.209 L 460.951,563.647 C 460.951,572.045 467.766,578.861 476.163,578.861 L 553.457,578.861 C 561.854,578.861 568.669,572.045 568.669,563.647 L 568.669,540.209 C 568.669,531.811 561.854,524.995 553.457,524.995 L 476.163,524.995 C 467.766,524.995 460.951,531.811 460.951,540.209 Z" fill="#ffffff" stroke-width="0.802" stroke-linejoin="miter" marker-start="none" marker-end="none"/>
+   <path d="M 461.8,540.936 L 461.8,562.92 C 461.8,571.251 468.562,578.012 476.891,578.012 L 552.729,578.012 C 561.058,578.012 567.82,571.251 567.82,562.92 L 567.82,540.936 C 567.82,532.605 561.058,525.844 552.729,525.844 L 476.891,525.844 C 468.562,525.844 461.8,532.605 461.8,540.936 Z" fill="#e5e5e5" stroke-width="0.8" stroke-linejoin="miter" marker-start="none" marker-end="none"/>
+   <text xml:space="preserve" transform="translate(514.763 554.755) scale(1 -1)" kerning="auto" fill="#b2b2b2" stroke-width="0.251" stroke-linejoin="round" stroke-linecap="round"><tspan x="-13.974" y="0">PICK</tspan><tspan x="-46.111" y="14.396">CARBON EVENT</tspan></text>
+  </g>
+ </g>
+</svg>

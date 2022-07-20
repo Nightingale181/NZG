@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/NZG/static/css/main.f47d5cbc.chunk.css",
-    "main.js": "/NZG/static/js/main.919933e9.chunk.js",
-    "main.js.map": "/NZG/static/js/main.919933e9.chunk.js.map",
+    "main.css": "/NZG/static/css/main.576a16fe.chunk.css",
+    "main.js": "/NZG/static/js/main.183bc8c9.chunk.js",
+    "main.js.map": "/NZG/static/js/main.183bc8c9.chunk.js.map",
     "runtime-main.js": "/NZG/static/js/runtime-main.897ad81b.js",
     "runtime-main.js.map": "/NZG/static/js/runtime-main.897ad81b.js.map",
     "static/css/2.71bdbe2f.chunk.css": "/NZG/static/css/2.71bdbe2f.chunk.css",
-    "static/js/2.411525a8.chunk.js": "/NZG/static/js/2.411525a8.chunk.js",
-    "static/js/2.411525a8.chunk.js.map": "/NZG/static/js/2.411525a8.chunk.js.map",
+    "static/js/2.0dd8096c.chunk.js": "/NZG/static/js/2.0dd8096c.chunk.js",
+    "static/js/2.0dd8096c.chunk.js.map": "/NZG/static/js/2.0dd8096c.chunk.js.map",
     "static/js/3.f1d1ad01.chunk.js": "/NZG/static/js/3.f1d1ad01.chunk.js",
     "static/js/3.f1d1ad01.chunk.js.map": "/NZG/static/js/3.f1d1ad01.chunk.js.map",
     "index.html": "/NZG/index.html",
     "static/css/2.71bdbe2f.chunk.css.map": "/NZG/static/css/2.71bdbe2f.chunk.css.map",
-    "static/css/main.f47d5cbc.chunk.css.map": "/NZG/static/css/main.f47d5cbc.chunk.css.map",
-    "static/js/2.411525a8.chunk.js.LICENSE.txt": "/NZG/static/js/2.411525a8.chunk.js.LICENSE.txt",
+    "static/css/main.576a16fe.chunk.css.map": "/NZG/static/css/main.576a16fe.chunk.css.map",
+    "static/js/2.0dd8096c.chunk.js.LICENSE.txt": "/NZG/static/js/2.0dd8096c.chunk.js.LICENSE.txt",
     "static/media/App.css": "/NZG/static/media/Lato-Black.0b51cf32.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.897ad81b.js",
     "static/css/2.71bdbe2f.chunk.css",
-    "static/js/2.411525a8.chunk.js",
-    "static/css/main.f47d5cbc.chunk.css",
-    "static/js/main.919933e9.chunk.js"
+    "static/js/2.0dd8096c.chunk.js",
+    "static/css/main.576a16fe.chunk.css",
+    "static/js/main.183bc8c9.chunk.js"
   ]
 }
